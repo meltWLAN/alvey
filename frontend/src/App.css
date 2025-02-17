@@ -1,0 +1,143 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.notification {
+  background-color: #ffd700;
+  color: #333;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.connect-button {
+  background-color: #646cff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+.connect-button:hover {
+  background-color: #535bf2;
+}
+
+.account {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.mint-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.uri-input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mint-button {
+  background-color: #42b883;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.mint-button:hover {
+  background-color: #3aa876;
+}
+
+.mint-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff4444;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffe6e6;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.balance,
+.price {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .connect-button,
+  .mint-button {
+    padding: 15px;
+    font-size: 18px;
+    margin: 10px auto;
+  }
+
+  .uri-input {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .account {
+    word-break: break-all;
+    font-size: 14px;
+    padding: 20px 15px;
+  }
+
+  .balance,
+  .price {
+    font-size: 16px;
+    margin: 15px 0;
+    padding: 12px;
+  }
+
+  .notification {
+    margin: 15px 0;
+    padding: 15px;
+  }
+
+  .error {
+    margin: 15px 0;
+    padding: 12px;
+  }
+}
