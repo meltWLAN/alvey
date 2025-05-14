@@ -1,143 +1,1016 @@
+/* 全局样式 */
 .app {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-}
-
-.notification {
-  background-color: #ffd700;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #333;
-  padding: 12px;
-  border-radius: 8px;
-  margin: 10px 0;
-  font-size: 14px;
-  line-height: 1.4;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* 欢迎屏幕 */
+.welcome-screen {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.welcome-text {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* 钱包连接按钮 */
 .connect-button {
-  background-color: #646cff;
+  display: block;
+  width: 200px;
+  margin: 2rem auto;
+  padding: 0.8rem 1.5rem;
+  background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 4px;
+  font-size: 1rem;
   cursor: pointer;
-  font-size: 16px;
-  margin: 20px 0;
-  width: 100%;
-  max-width: 300px;
+  transition: background-color 0.3s;
 }
 
 .connect-button:hover {
-  background-color: #535bf2;
+  background-color: #45a049;
 }
 
-.account {
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 12px;
-  margin: 20px 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+/* 演示按钮 */
+.demo-button {
+  display: block;
+  width: 200px;
+  margin: 1rem auto;
+  padding: 0.8rem 1.5rem;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.mint-form {
+.demo-button:hover {
+  background-color: #0b7dda;
+}
+
+/* 账户信息区 */
+.account-info {
+  background-color: #e9f7ef;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  border-left: 4px solid #4CAF50;
+}
+
+.account-info p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.balance, .price {
+  display: inline-block;
+  margin-right: 2rem;
+  background-color: rgba(76, 175, 80, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* 导航菜单 */
+.navigation {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 400px;
-  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-item {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  background-color: #f5f5f5;
+}
+
+.nav-item.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* 内容布局 */
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mint-section, .stake-section {
+  flex: 1;
+  min-width: 300px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 铸造表单 */
+.mint-form {
+  margin-top: 1rem;
 }
 
 .uri-input {
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 16px;
   width: 100%;
-  box-sizing: border-box;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.sample-uri {
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.sample-uri span {
+  color: #2196F3;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .mint-button {
-  background-color: #42b883;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #2196F3;
   color: white;
   border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
+  border-radius: 4px;
+  font-size: 1rem;
   cursor: pointer;
-  font-size: 16px;
-  width: 100%;
   transition: background-color 0.3s;
 }
 
 .mint-button:hover {
-  background-color: #3aa876;
+  background-color: #0b7dda;
 }
 
 .mint-button:disabled {
-  background-color: #ccc;
+  background-color: #cccccc;
   cursor: not-allowed;
 }
 
-.error {
-  color: #ff4444;
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #ffe6e6;
-  border-radius: 8px;
-  font-size: 14px;
+/* 元数据预览 */
+.metadata-preview {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  overflow: auto;
 }
 
-.balance,
-.price {
+.preview-image {
+  max-width: 100%;
+  max-height: 200px;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow: auto;
+  font-size: 0.85rem;
+}
+
+/* 质押表单 */
+.stake-section form {
+  margin-bottom: 1.5rem;
+}
+
+.stake-section input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.stake-section button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #FF9800;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.stake-section button:hover {
+  background-color: #e68a00;
+}
+
+.stake-section button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* 质押记录 */
+.stakes-list {
+  margin-top: 1rem;
+}
+
+.stake-item {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  border-left: 3px solid #FF9800;
+}
+
+/* 市场和应用界面 */
+.marketplace-wrapper, .spaces-wrapper, .apphub-wrapper {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* 市场过滤器 */
+.marketplace-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.marketplace-filters select, .marketplace-filters input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1;
+}
+
+/* 市场NFT卡片 */
+.marketplace-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.marketplace-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.marketplace-item:hover {
+  transform: translateY(-5px);
+}
+
+.marketplace-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.marketplace-item h3 {
+  padding: 0.75rem;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.marketplace-item .price {
+  padding: 0 0.75rem;
+  color: #2196F3;
+  font-weight: bold;
+}
+
+.buy-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #45a049;
+}
+
+/* 虚拟空间控制 */
+.spaces-controls {
+  margin-bottom: 1.5rem;
+}
+
+.spaces-controls .tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.spaces-controls .tabs span {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.spaces-controls .tabs span.active {
+  border-bottom: 2px solid #4CAF50;
+  color: #4CAF50;
+}
+
+/* 虚拟空间卡片 */
+.spaces-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.space-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.space-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.space-item h3 {
+  padding: 0.75rem;
+  margin: 0;
+}
+
+.space-details {
+  padding: 0 0.75rem 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-type, .space-size {
+  background-color: #f0f0f0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.enter-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #9C27B0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.enter-button:hover {
+  background-color: #7B1FA2;
+}
+
+/* 应用中心 */
+.app-categories {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.app-categories span {
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.app-categories span.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* 应用卡片 */
+.app-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.app-item {
   background-color: #fff;
-  padding: 10px;
   border-radius: 8px;
-  margin: 10px 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
 }
 
+.app-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.app-item h3 {
+  margin: 0 0 0.5rem;
+}
+
+.app-category {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.app-description {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.connect-app-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #FF5722;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.connect-app-button:hover {
+  background-color: #E64A19;
+}
+
+/* 应用连接按钮状态 */
+.connect-app-button.connected {
+  background-color: #4CAF50;
+}
+
+.connect-app-button.connected:hover {
+  background-color: #3d8b40;
+}
+
+.connect-app-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* 应用连接信息 */
+.app-connected-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  background-color: rgba(76, 175, 80, 0.1);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #4CAF50;
+}
+
+.connected-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+}
+
+/* 空内容提示 */
+.empty-content {
+  padding: 3rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  color: #666;
+}
+
+/* 交易状态 */
+.transaction-status-wrapper {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.transaction-status {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+}
+
+.status-info {
+  margin-bottom: 0.5rem;
+}
+
+.transaction-status.pending {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+}
+
+.transaction-status.processing {
+  background-color: #cfe2ff;
+  border-left: 4px solid #0d6efd;
+}
+
+.transaction-status.confirmed {
+  background-color: #d1e7dd;
+  border-left: 4px solid #198754;
+}
+
+.transaction-status.failed {
+  background-color: #f8d7da;
+  border-left: 4px solid #dc3545;
+}
+
+/* 交易历史 */
+.tx-history {
+  margin-top: 1.5rem;
+}
+
+.tx-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.status-dot.confirmed {
+  background-color: #198754;
+}
+
+.status-dot.failed {
+  background-color: #dc3545;
+}
+
+.tx-item span {
+  margin-right: 1rem;
+}
+
+.tx-item a {
+  margin-left: auto;
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.tx-item a:hover {
+  text-decoration: underline;
+}
+
+/* 错误和通知 */
+.error, .notification {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.error {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.notification {
+  background-color: #cce5ff;
+  border: 1px solid #b8daff;
+  color: #004085;
+}
+
+/* 响应式设计 */
 @media (max-width: 768px) {
   .app {
     padding: 1rem;
   }
-
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+  
+  .content-wrapper {
+    flex-direction: column;
   }
-
-  .connect-button,
-  .mint-button {
-    padding: 15px;
-    font-size: 18px;
-    margin: 10px auto;
+  
+  .navigation {
+    flex-wrap: wrap;
   }
-
-  .uri-input {
-    padding: 15px;
-    font-size: 16px;
+  
+  .nav-item {
+    flex: 1 0 50%;
   }
-
-  .account {
-    word-break: break-all;
-    font-size: 14px;
-    padding: 20px 15px;
+  
+  .marketplace-items, .spaces-items, .app-items {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
-
-  .balance,
-  .price {
-    font-size: 16px;
-    margin: 15px 0;
-    padding: 12px;
+  
+  .connect-button, .demo-button {
+    width: 100%;
   }
+}
 
-  .notification {
-    margin: 15px 0;
-    padding: 15px;
-  }
+/* 演示模式开关 */
+.demo-mode-toggle {
+  margin: 1.5rem auto;
+  width: 300px;
+  background-color: #f0f7ff;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px dashed #2196F3;
+}
 
-  .error {
-    margin: 15px 0;
-    padding: 12px;
-  }
+.demo-mode-toggle label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #0d6efd;
+  cursor: pointer;
+}
+
+.demo-mode-toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: #2196F3;
+}
+
+/* 我的NFT区域 */
+.my-nfts-section {
+  flex: 2;
+  flex-basis: 100%;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.owned-nfts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.owned-nft-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.owned-nft-item:hover {
+  transform: translateY(-5px);
+}
+
+.owned-nft-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.nft-details {
+  padding: 1rem;
+}
+
+.nft-details h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.nft-details p {
+  margin: 0 0 1rem 0;
+  color: #666;
+}
+
+.nft-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.stake-button, .view-button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.stake-button {
+  background-color: #FF9800;
+  color: white;
+}
+
+.stake-button:hover {
+  background-color: #e68a00;
+}
+
+.view-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.view-button:hover {
+  background-color: #0b7dda;
+}
+
+.empty-nfts {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* 虚拟空间详情页 */
+.space-detail-wrapper {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.space-detail-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #2196F3;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-right: 1rem;
+}
+
+.space-type-badge {
+  padding: 0.25rem 0.75rem;
+  background-color: #e1f5fe;
+  color: #0288d1;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-left: 1rem;
+}
+
+.space-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.space-preview {
+  flex: 2;
+  min-width: 300px;
+}
+
+.space-full-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.space-3d-controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.space-3d-controls button {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+}
+
+.vr-button {
+  background-color: #9c27b0;
+  color: white;
+}
+
+.vr-button:hover {
+  background-color: #7b1fa2;
+}
+
+.ar-button {
+  background-color: #673ab7;
+  color: white;
+}
+
+.ar-button:hover {
+  background-color: #512da8;
+}
+
+.rotate-button {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.rotate-button:hover {
+  background-color: #303f9f;
+}
+
+.space-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.info-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.info-section h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #555;
+}
+
+.info-section p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.visitor-avatars {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.space-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.invite-button, .edit-button {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.invite-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.invite-button:hover {
+  background-color: #1976D2;
+}
+
+.edit-button {
+  background-color: #FF9800;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #F57C00;
+}
+
+/* 进入按钮禁用状态 */
+.enter-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* AlveyLendPage.jsx 专用样式 */
+.alvey-lend-page {
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 1rem;
+}
+
+.alvey-lend-page h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.alvey-lend-page p {
+  font-size: 1.1rem;
+  color: #34495e;
+  line-height: 1.6;
+}
+
+.back-to-apphub-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.back-to-apphub-button:hover {
+  background-color: #2980b9;
+}
+
+/* DApp按钮特殊样式 */
+.dapp-button {
+  background-color: #27ae60 !important; /* 使用!important确保覆盖原有样式 */
+}
+
+.dapp-button:hover {
+  background-color: #229954 !important;
 }

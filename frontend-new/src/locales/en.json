@@ -1,0 +1,48 @@
+{
+  "common": {
+    "home": "Home",
+    "marketplace": "Marketplace",
+    "create": "Create",
+    "apps": "App Hub",
+    "spaces": "Spaces",
+    "profile": "Profile",
+    "encyclopedia": "Encyclopedia",
+    "connect": "Connect Wallet",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "home": {
+    "title": "Explore 3D NFTs on AlveyChain",
+    "subtitle": "Create, trade and experience 3D digital art",
+    "featured": "Featured NFTs",
+    "recent": "Recently Created",
+    "popular": "Popular NFTs",
+    "viewAll": "View All"
+  },
+  "appHub": {
+    "title": "App Hub",
+    "subtitle": "Explore popular applications on AlveyChain",
+    "connectWallet": "Connect Wallet",
+    "connectWalletHeading": "Connect Your Wallet",
+    "connectWalletDescription": "Connect your wallet to get personalized recommendations and access all features",
+    "recentlyUsed": "Recently Used",
+    "featured": "Featured Apps",
+    "all": "All Apps",
+    "defi": "DeFi Apps",
+    "nft": "NFT Apps",
+    "games": "Games",
+    "metaverse": "Metaverse",
+    "walletNotDetected": "No wallet detected. Please install MetaMask or other compatible wallet"
+  },
+  "marketplace": {
+    "title": "NFT Marketplace",
+    "buy": "Buy",
+    "sell": "Sell",
+    "filter": "Filter",
+    "sort": "Sort",
+    "price": "Price",
+    "category": "Category",
+    "search": "Search NFTs..."
+  }
+} 

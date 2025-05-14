@@ -1,0 +1,23 @@
+# 数据获取和处理
+tushare>=1.4.19
+akshare>=1.8.0
+pandas>=1.5.0
+numpy>=1.26.0
+
+# 机器学习和深度学习
+tensorflow-macos>=2.10.0
+scikit-learn>=1.0.0
+prophet>=1.1.0
+xgboost>=1.7.0
+keras>=2.10.0
+
+# 数据可视化
+matplotlib>=3.5.0
+plotly>=5.10.0
+
+# Web界面开发
+streamlit>=1.15.0
+
+# 工具库
+python-dotenv>=0.21.0
+tqdm>=4.64.0

@@ -1,0 +1,552 @@
+/* AlveyLendPageV2 主样式 */
+.alvey-lend-page-v2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* 页面标题和返回按钮 */
+.alveylend-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.alveylend-header h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.version {
+  font-size: 14px;
+  background-color: #3498db;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.back-to-apphub-button {
+  background-color: transparent;
+  border: 1px solid #3498db;
+  color: #3498db;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: all 0.2s ease;
+}
+
+.back-to-apphub-button:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* 用户模式选择器 */
+.user-mode-selector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.user-mode-selector label {
+  font-weight: 600;
+  margin-right: 15px;
+  color: #2c3e50;
+}
+
+.mode-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.mode-button {
+  background-color: white;
+  border: 1px solid #ddd;
+  color: #555;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mode-button.active {
+  background-color: #3498db;
+  border-color: #3498db;
+  color: white;
+}
+
+.mode-button:hover:not(.active) {
+  border-color: #3498db;
+  color: #3498db;
+}
+
+/* 消息提示 */
+.error-message, .tx-message, .success-message {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.error-message {
+  background-color: #ffe9e9;
+  border-left: 4px solid #ff5252;
+  color: #d32f2f;
+}
+
+.tx-message {
+  background-color: #e8f4fd;
+  border-left: 4px solid #2196f3;
+  color: #0d47a1;
+}
+
+.success-message {
+  background-color: #e8f5e9;
+  border-left: 4px solid #4caf50;
+  color: #2e7d32;
+}
+
+/* 视图选择器 */
+.view-selector {
+  display: flex;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.view-button {
+  padding: 12px 24px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #777;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.view-button.active {
+  color: #3498db;
+}
+
+.view-button.active:after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #3498db;
+}
+
+.view-button:hover:not(.active) {
+  color: #555;
+}
+
+/* 内容容器 */
+.lend-content-wrapper {
+  min-height: 500px;
+  padding: 20px 0;
+}
+
+/* NFT选择部分 */
+.nft-selection-section {
+  margin-bottom: 40px;
+}
+
+.nft-selection-section h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.user-nfts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.nft-lend-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.nft-lend-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.nft-lend-card.selected {
+  border-color: #3498db;
+  background-color: #f0f8ff;
+}
+
+.nft-image-container {
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+
+.nft-image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.nft-details {
+  padding: 15px;
+}
+
+.nft-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.nft-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+
+.nft-max-loan {
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+/* 贷款创建表单 */
+.loan-creation-section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.loan-creation-section h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.loan-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.form-hint {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.loan-summary {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  grid-column: 1 / -1;
+}
+
+.loan-summary h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.summary-item:last-child {
+  margin-bottom: 0;
+  padding-top: 10px;
+  border-top: 1px dashed #ddd;
+  font-weight: 600;
+}
+
+.submit-loan-button {
+  grid-column: 1 / -1;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-loan-button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.submit-loan-button:disabled {
+  background-color: #b3b3b3;
+  cursor: not-allowed;
+}
+
+/* 贷款卡片通用样式 */
+.loan-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.loan-card:hover {
+  transform: translateY(-5px);
+}
+
+.loan-header {
+  background-color: #f8f9fa;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.loan-header h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.loan-status {
+  font-size: 14px;
+  font-weight: 600;
+  color: #27ae60;
+  background-color: #e8f5e9;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.loan-status.overdue {
+  color: #e74c3c;
+  background-color: #ffe9e9;
+}
+
+.loan-details {
+  padding: 20px;
+}
+
+.loan-info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.loan-info-item span:first-child {
+  color: #7f8c8d;
+}
+
+.loan-info-item span:last-child {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.loan-info-item .overdue {
+  color: #e74c3c;
+}
+
+/* 资助和还款按钮 */
+.fund-loan-button, .repay-loan-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.fund-loan-button:hover:not(:disabled),
+.repay-loan-button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.fund-loan-button:disabled,
+.repay-loan-button:disabled {
+  background-color: #b3b3b3;
+  cursor: not-allowed;
+}
+
+.repay-loan-button {
+  background-color: #27ae60;
+}
+
+.repay-loan-button:hover:not(:disabled) {
+  background-color: #219653;
+}
+
+/* 浏览贷款视图 */
+.browse-loan-view h3, 
+.my-loans-view h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.available-loans-grid,
+.active-loans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* 加载状态 */
+.loading-text {
+  font-style: italic;
+  color: #7f8c8d;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 页脚 */
+.lend-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.system-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info-item {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.info-item span:first-child {
+  margin-right: 5px;
+}
+
+.info-item a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .loan-form {
+    grid-template-columns: 1fr;
+  }
+  
+  .user-nfts-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+  
+  .available-loans-grid,
+  .active-loans-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .user-mode-selector {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .user-mode-selector label {
+    margin-bottom: 10px;
+  }
+  
+  .mode-buttons {
+    width: 100%;
+  }
+  
+  .mode-button {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .view-selector {
+    overflow-x: auto;
+  }
+  
+  .view-button {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+  
+  .alveylend-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .back-to-apphub-button {
+    margin-bottom: 15px;
+  }
+} 

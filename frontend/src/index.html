@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlveyNFT - AlveyChain上的NFT平台</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f8fa;
+      color: #333;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, #1a2980, #26d0ce);
+      color: white;
+      padding: 80px 0;
+      border-radius: 0 0 20px 20px;
+      margin-bottom: 40px;
+    }
+    .card {
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .btn-primary {
+      background-color: #3498db;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+    }
+    .btn-primary:hover {
+      background-color: #2980b9;
+    }
+    .nft-preview {
+      width: 100%;
+      height: 250px;
+      background-color: #f1f1f1;
+      border-radius: 15px 15px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 18px;
+    }
+    .status-bar {
+      margin: 20px 0;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #e8f4fd;
+    }
+    footer {
+      margin-top: 60px;
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 0;
+    }
+    .social-links i {
+      font-size: 24px;
+      margin: 0 10px;
+      color: white;
+    }
+    #notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 15px 20px;
+      border-radius: 8px;
+      color: white;
+      display: none;
+      z-index: 1000;
+    }
+    .success {
+      background-color: #2ecc71;
+    }
+    .error {
+      background-color: #e74c3c;
+    }
+    .warning {
+      background-color: #f39c12;
+    }
+  </style>
+</head>
+<body>
+  <!-- 通知区域 -->
+  <div id="notification"></div>
+
+  <!-- 导航栏 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">AlveyNFT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">NFT画廊</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mint">铸造</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#staking">质押</a>
+          </li>
+        </ul>
+        <button id="connectWallet" class="btn btn-outline-light">连接钱包</button>
+        <span id="walletInfo" class="ms-3 text-light" style="display: none;">
+          <span id="walletAddress"></span>
+          <span id="walletBalance" class="ms-2 badge bg-success"></span>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 英雄区域 -->
+  <section class="hero-section">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold mb-4">AlveyNFT</h1>
+      <p class="lead mb-4">在 AlveyChain 上铸造、收集和质押独特的数字艺术品</p>
+      <a href="#mint" class="btn btn-light btn-lg">立即铸造</a>
+    </div>
+  </section>
+
+  <!-- 主要内容 -->
+  <div class="container">
+    <!-- 网络状态栏 -->
+    <div class="status-bar" id="networkStatus">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <strong>网络状态:</strong>
+          <span id="currentNetwork">未连接</span>
+        </div>
+        <button id="switchNetwork" class="btn btn-sm btn-primary" style="display: none;">
+          切换到 AlveyChain
+        </button>
+      </div>
+    </div>
+
+    <!-- 铸造区域 -->
+    <section id="mint" class="py-5">
+      <h2 class="text-center mb-5">铸造你的 NFT</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="card">
+            <div class="nft-preview" id="nftPreview">
+              NFT 预览
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">创建独特的 NFT</h5>
+              <p class="card-text">每个 NFT 的铸造价格是 <span id="mintPrice">100</span> MARIO 代币</p>
+              <div class="mb-3">
+                <label for="nftURI" class="form-label">NFT URI</label>
+                <input type="text" class="form-control" id="nftURI" 
+                       placeholder="https://example.com/metadata/1">
+              </div>
+              <div class="d-grid gap-2">
+                <button id="approveBtn" class="btn btn-warning">授权代币</button>
+                <button id="mintBtn" class="btn btn-primary" disabled>铸造 NFT</button>
+              </div>
+              <div id="mintStatus" class="mt-3 text-center" style="display: none;">
+                <div class="spinner-border text-primary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <p id="mintStatusText" class="mt-2">处理中...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NFT 画廊 -->
+    <section id="gallery" class="py-5">
+      <h2 class="text-center mb-5">NFT 画廊</h2>
+      <div class="row" id="nftGallery">
+        <div class="col-12 text-center">
+          <p>连接钱包后查看您的 NFT</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 质押区域 -->
+    <section id="staking" class="py-5">
+      <h2 class="text-center mb-5">质押 NFT</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">质押您的 NFT 赚取奖励</h5>
+              <p class="card-text">质押 NFT 可以获得 MARIO 代币奖励</p>
+              <div id="stakingActions" class="d-flex justify-content-between" style="display: none !important;">
+                <button id="stakeBtn" class="btn btn-success">质押所选 NFT</button>
+                <button id="unstakeBtn" class="btn btn-warning">取消质押</button>
+                <button id="claimBtn" class="btn btn-info">领取奖励</button>
+              </div>
+              <div id="stakingInfo" class="mt-4">
+                <p>请连接钱包查看质押信息</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>关于 AlveyNFT</h4>
+          <p>AlveyNFT 是在 AlveyChain 区块链上的一个 NFT 平台，允许用户铸造、收集和质押独特的数字艺术品。</p>
+        </div>
+        <div class="col-md-3">
+          <h4>链接</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">首页</a></li>
+            <li><a href="#gallery" class="text-white">NFT 画廊</a></li>
+            <li><a href="#mint" class="text-white">铸造</a></li>
+            <li><a href="#staking" class="text-white">质押</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>关注我们</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-light">
+      <div class="text-center">
+        <p>&copy; 2023 AlveyNFT. 保留所有权利。</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 使用 Modal 显示交易详情 -->
+  <div class="modal fade" id="txModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">交易详情</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>交易哈希:</strong> <span id="txHash"></span></p>
+          <p><strong>状态:</strong> <span id="txStatus"></span></p>
+          <div id="txSuccessDetails" style="display: none;">
+            <p><strong>NFT ID:</strong> <span id="mintedTokenId"></span></p>
+            <button id="viewOnExplorer" class="btn btn-sm btn-outline-primary">在区块浏览器中查看</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 引入 Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js" type="application/javascript"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html> 

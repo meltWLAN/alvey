@@ -1,0 +1,79 @@
+/**
+ * AlveyNFT 项目前端配置文件
+ * 部署后，复制此文件为 config.js 并填入实际值
+ */
+
+// 链配置
+export const CHAIN_CONFIG = {
+  chainId: 3797,  // AlveyChain 链ID
+  chainName: "AlveyChain", 
+  nativeCurrency: {
+    name: "ALV",
+    symbol: "ALV",
+    decimals: 18
+  },
+  rpcUrls: ["https://elves-core1.alvey.io/"],
+  blockExplorerUrls: ["https://alvey.io/"]
+};
+
+// 合约地址 - 部署后填入实际地址
+export const CONTRACT_ADDRESSES = {
+  // NFT 合约地址
+  nftContract: "0x...",
+  
+  // 支付代币合约地址
+  paymentToken: "0x...",
+  
+  // 质押合约地址
+  stakingContract: "0x..."
+};
+
+// API 配置
+export const API_CONFIG = {
+  // 如果有后端服务，设置 API URL
+  apiUrl: process.env.REACT_APP_API_URL || "https://api.your-domain.com",
+  
+  // IPFS 网关配置
+  ipfsGateway: "https://ipfs.io/ipfs/",
+  
+  // 可选的 IPFS API 配置，如果您要在前端直接上传到 IPFS
+  ipfsApi: {
+    host: "ipfs.infura.io",
+    port: 5001,
+    protocol: "https",
+    apiPath: "/api/v0"
+  }
+};
+
+// 应用配置
+export const APP_CONFIG = {
+  // 应用名称
+  appName: "AlveyNFT",
+  
+  // 最大铸造数量
+  maxMintPerTx: 10,
+  
+  // 社交媒体链接
+  socialLinks: {
+    twitter: "https://twitter.com/your_account",
+    discord: "https://discord.gg/your_server",
+    telegram: "https://t.me/your_channel"
+  },
+  
+  // 功能开关
+  features: {
+    staking: true,
+    marketplace: false,
+    fractional: false
+  }
+};
+
+// 主题配置
+export const THEME_CONFIG = {
+  // 主色调
+  primaryColor: "#3498db",
+  secondaryColor: "#2ecc71",
+  
+  // 暗模式开关
+  darkMode: false
+}; 

@@ -1,0 +1,49 @@
+{
+  "sampleModels": [
+    {
+      "id": "1",
+      "name": "立方体艺术品",
+      "description": "一个简单的彩色立方体，展示基本的3D建模和纹理映射。",
+      "thumbnailUrl": "https://storage.googleapis.com/donmccurdy-models/glb/cube.glb.png",
+      "modelUrl": "https://storage.googleapis.com/donmccurdy-models/glb/cube.glb",
+      "format": "glb",
+      "vrCompatible": true
+    },
+    {
+      "id": "2",
+      "name": "恐龙",
+      "description": "一个详细的恐龙3D模型，具有高质量的纹理和丰富的细节。",
+      "thumbnailUrl": "https://storage.googleapis.com/donmccurdy-models/glb/velociraptor.glb.png",
+      "modelUrl": "https://storage.googleapis.com/donmccurdy-models/glb/velociraptor.glb",
+      "format": "glb",
+      "vrCompatible": true
+    },
+    {
+      "id": "3",
+      "name": "未来派飞船",
+      "description": "一艘细节丰富的未来派太空飞船模型，适合VR展示。",
+      "thumbnailUrl": "https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/previews/b5b87c13-e0ba-4b25-a373-5c40a4089ba1/watermarked-screen.jpg",
+      "modelUrl": "https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/spaceship/model.gltf",
+      "format": "gltf",
+      "vrCompatible": true
+    }
+  ],
+  "sampleSpaces": [
+    {
+      "id": "1",
+      "name": "现代艺术画廊",
+      "description": "一个简约而宽敞的现代艺术展览空间，适合展示数字艺术品。",
+      "thumbnailUrl": "https://cdn.pixabay.com/photo/2017/08/22/22/36/building-2670307_960_720.jpg",
+      "modelUrl": "https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/art-gallery/model.gltf",
+      "format": "gltf"
+    },
+    {
+      "id": "2",
+      "name": "太空站",
+      "description": "一个巨大的轨道空间站内部，提供未来感十足的社交场所。",
+      "thumbnailUrl": "https://cdn.pixabay.com/photo/2019/05/30/14/32/observatory-4240130_960_720.jpg",
+      "modelUrl": "https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/space-station/model.gltf",
+      "format": "gltf"
+    }
+  ]
+} 

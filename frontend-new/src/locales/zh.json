@@ -1,0 +1,48 @@
+{
+  "common": {
+    "home": "首页",
+    "marketplace": "市场",
+    "create": "创建",
+    "apps": "应用中心",
+    "spaces": "空间",
+    "profile": "个人中心",
+    "encyclopedia": "百科全书",
+    "connect": "连接钱包",
+    "loading": "加载中...",
+    "error": "出错了",
+    "success": "操作成功"
+  },
+  "home": {
+    "title": "探索AlveyChain上的3D NFT世界",
+    "subtitle": "创建、交易和体验3D数字艺术品",
+    "featured": "精选NFT",
+    "recent": "最新创建",
+    "popular": "热门NFT",
+    "viewAll": "查看全部"
+  },
+  "appHub": {
+    "title": "应用中心",
+    "subtitle": "探索AlveyChain上的热门应用",
+    "connectWallet": "连接钱包",
+    "connectWalletHeading": "连接您的钱包",
+    "connectWalletDescription": "连接钱包以获取个性化推荐和访问所有功能",
+    "recentlyUsed": "最近使用",
+    "featured": "推荐应用",
+    "all": "全部应用",
+    "defi": "DeFi应用",
+    "nft": "NFT应用",
+    "games": "游戏",
+    "metaverse": "元宇宙",
+    "walletNotDetected": "未检测到钱包，请安装MetaMask或其他兼容钱包"
+  },
+  "marketplace": {
+    "title": "NFT市场",
+    "buy": "购买",
+    "sell": "出售",
+    "filter": "筛选",
+    "sort": "排序",
+    "price": "价格",
+    "category": "类别",
+    "search": "搜索NFT..."
+  }
+} 

@@ -1,0 +1,51 @@
+{
+  "name": "水晶宫殿",
+  "description": "这是一个由水晶和宝石构成的虚拟宫殿，适合展示珍贵的NFT艺术品和举办虚拟活动。",
+  "image": "https://bafybeihjjkwdrxxjnuwevlqtqmh3iegcadc6xebweufcs4x6y4x6tckx5q.ipfs.nftstorage.link/crystalpalace.png",
+  "animation_url": "https://bafybeihjjkwdrxxjnuwevlqtqmh3iegcadc6xebweufcs4x6y4x6tckx5q.ipfs.nftstorage.link/crystalpalace.glb",
+  "attributes": [
+    {
+      "trait_type": "空间类型",
+      "value": "展厅"
+    },
+    {
+      "trait_type": "空间大小",
+      "value": "大型"
+    },
+    {
+      "trait_type": "主题",
+      "value": "水晶"
+    },
+    {
+      "trait_type": "容量",
+      "value": "最多支持100人同时在线"
+    },
+    {
+      "trait_type": "展示容量",
+      "value": 50,
+      "max_value": 50
+    }
+  ],
+  "properties": {
+    "vrCompatible": true,
+    "format": "glb",
+    "creator": "AlveyChain工作室",
+    "category": "展厅",
+    "features": [
+      "沉浸式音频",
+      "实时光影效果",
+      "动态环境",
+      "多人互动"
+    ],
+    "files": [
+      {
+        "uri": "https://bafybeihjjkwdrxxjnuwevlqtqmh3iegcadc6xebweufcs4x6y4x6tckx5q.ipfs.nftstorage.link/crystalpalace.glb",
+        "type": "model/gltf-binary"
+      },
+      {
+        "uri": "https://bafybeihjjkwdrxxjnuwevlqtqmh3iegcadc6xebweufcs4x6y4x6tckx5q.ipfs.nftstorage.link/crystalpalace.png",
+        "type": "image/png"
+      }
+    ]
+  }
+} 

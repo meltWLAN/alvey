@@ -1,0 +1,676 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "submit": "Submit",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "all": "All",
+    "platformCompatibility": "Platform Compatibility",
+    "vrSupportInfo": "MetaverseX platform supports both VR devices and regular devices. Users without VR devices can use all platform features normally.",
+    "gotIt": "Got it"
+  },
+  "navbar": {
+    "home": "Home",
+    "marketplace": "Marketplace",
+    "spaces": "Spaces",
+    "create": "Create",
+    "profile": "Profile",
+    "explore": "Explore",
+    "connect": "Connect Wallet",
+    "disconnect": "Disconnect"
+  },
+  "auth": {
+    "connectWallet": "Connect Wallet",
+    "switchNetwork": "Switch Network",
+    "walletConnected": "Wallet Connected",
+    "walletNotConnected": "Wallet Not Connected",
+    "networkError": "Network Error"
+  },
+  "home": {
+    "title": "Welcome to MetaverseX",
+    "subtitle": "The next generation 3D NFT platform on AlveyChain",
+    "exploreMarketplace": "Explore Marketplace",
+    "createNFT": "Create NFT",
+    "featuredNFTs": "Featured NFTs",
+    "popularCreators": "Popular Creators",
+    "recentActivity": "Recent Activity"
+  },
+  "marketplace": {
+    "title": "NFT Marketplace",
+    "subtitle": "Discover, collect, and trade unique 3D NFTs",
+    "filters": {
+      "category": "Category",
+      "price": "Price",
+      "status": "Status",
+      "format": "Format"
+    },
+    "sort": {
+      "newest": "Newest",
+      "oldest": "Oldest",
+      "priceLowToHigh": "Price: Low to High",
+      "priceHighToLow": "Price: High to Low",
+      "popular": "Popular"
+    },
+    "status": {
+      "forSale": "For Sale",
+      "auction": "Auction",
+      "sold": "Sold",
+      "notForSale": "Not For Sale"
+    }
+  },
+  "nftDetail": {
+    "owner": "Owner",
+    "creator": "Creator",
+    "description": "Description",
+    "properties": "Properties",
+    "price": "Price",
+    "buyNow": "Buy Now",
+    "placeOffer": "Place Offer",
+    "viewInVR": "View in VR",
+    "viewHistory": "View History",
+    "listed": "Listed",
+    "created": "Created",
+    "format": "Format"
+  },
+  "create": {
+    "title": "Create New NFT",
+    "modelUpload": "Model Upload",
+    "thumbnailUpload": "Thumbnail Upload",
+    "supportedFormats": "Supported Formats",
+    "maxFileSize": "Max File Size",
+    "nftDetails": "NFT Details",
+    "name": "Name",
+    "description": "Description",
+    "category": "Category",
+    "tags": "Tags",
+    "vrCompatible": "VR Compatible",
+    "mint": "Mint NFT",
+    "preview": "Preview",
+    "uploadInstructions": "Drag and drop your file here, or click to select",
+    "uploadSuccess": "Upload successful",
+    "uploadError": "Upload failed"
+  },
+  "spaces": {
+    "title": "Virtual Spaces",
+    "createSpace": "Create Space",
+    "mySpaces": "My Spaces",
+    "publicSpaces": "Public Spaces",
+    "popularSpaces": "Popular Spaces",
+    "spaceTypes": {
+      "gallery": "Gallery",
+      "showroom": "Showroom",
+      "game": "Game",
+      "social": "Social"
+    },
+    "spaceSizes": {
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large"
+    }
+  },
+  "profile": {
+    "myNFTs": "My NFTs",
+    "created": "Created",
+    "collected": "Collected",
+    "favorites": "Favorites",
+    "activity": "Activity",
+    "editProfile": "Edit Profile",
+    "accountDetails": "Account Details",
+    "walletAddress": "Wallet Address",
+    "joinDate": "Join Date",
+    "balance": "Balance"
+  },
+  "aiAssistant": {
+    "title": "AI Assistant",
+    "welcomeMessage": "Hello! I'm your AI assistant. How can I help you today?",
+    "inputPlaceholder": "Ask me anything...",
+    "tabs": {
+      "chat": "Chat",
+      "create": "Create"
+    },
+    "contextualSuggestions": "Suggestions for you",
+    "toggleLanguage": "Toggle Language",
+    "voiceInput": "Voice Input",
+    "open": "Open Assistant",
+    "close": "Close Assistant",
+    "languageChanged": "Language changed to {{language}}",
+    "beginnerTip": "Tip: You can ask more specific questions for better answers.",
+    "advancedTip": "Advanced tip: You can use specific technical terms for precise results.",
+    "templateSelection": "I would like to use the {{template}} template",
+    "templateConfirmation": "Great choice! The {{template}} template is ready to use.",
+    "createModelTitle": "Create with AI",
+    "customCreationTitle": "Custom Creation",
+    "customCreationDescription": "Start from scratch with AI guidance",
+    "customCreationPrompt": "I want to create a custom 3D model",
+    "startCreating": "Start Creating",
+    "suggestions": {
+      "platformTour": "Take a platform tour",
+      "gettingStarted": "Getting started guide",
+      "findNFT": "Help me find an NFT",
+      "marketTrends": "Current market trends",
+      "createHelp": "How to create an NFT",
+      "modelTips": "Tips for 3D models",
+      "nftValuation": "How is this NFT valued",
+      "similarNFTs": "Show similar NFTs",
+      "connectWallet": "How to connect my wallet"
+    },
+    "features": {
+      "modelGen": {
+        "title": "Generate 3D Model",
+        "description": "Create 3D models from text descriptions",
+        "prompt": "Generate a 3D model of a futuristic spaceship"
+      },
+      "sceneGen": {
+        "title": "Create Scene",
+        "description": "Generate complete 3D environments",
+        "prompt": "Create a tropical island scene"
+      },
+      "creative": {
+        "title": "Creative Ideas",
+        "description": "Get inspiration for your next creation",
+        "prompt": "Give me creative NFT ideas"
+      },
+      "market": {
+        "title": "Market Insights",
+        "description": "Analyze trends and get recommendations",
+        "prompt": "What are the trending NFT categories?"
+      }
+    },
+    "templates": {
+      "spaceship": {
+        "name": "Spaceship",
+        "description": "Futuristic spacecraft template"
+      },
+      "character": {
+        "name": "Character",
+        "description": "Humanoid character template"
+      },
+      "building": {
+        "name": "Building",
+        "description": "Architectural structure template"
+      },
+      "vehicle": {
+        "name": "Vehicle",
+        "description": "Ground vehicle template"
+      }
+    },
+    "responses": {
+      "createModel": "To create a 3D model, you can use the Model Creator tool in the Create section. Start by selecting a template or upload your own base model, then use the editing tools to customize it.",
+      "nftInfo": "NFTs (Non-Fungible Tokens) are unique digital assets stored on the blockchain. On our platform, you can create, buy, sell, and collect 3D NFTs that can be used in virtual spaces.",
+      "vrHelp": "Our platform supports both VR and non-VR experiences. For VR, connect your headset and click the VR button on compatible NFTs and spaces. Without VR, you can still explore everything using your screen.",
+      "walletHelp": "To connect your wallet, click the 'Connect Wallet' button in the top right. We support MetaMask and other Ethereum-compatible wallets. Make sure you're on the AlveyChain network.",
+      "generalHelp": "MetaverseX is a platform for creating, trading, and experiencing 3D NFTs. You can explore the marketplace, create your own NFTs, design virtual spaces, and interact with other creators.",
+      "default": "I'm here to help you navigate the MetaverseX platform. You can ask me about creating NFTs, using the marketplace, setting up virtual spaces, or any other features."
+    }
+  },
+  "dappsHub": {
+    "title": "DApps Hub",
+    "subtitle": "Explore integrated applications in the AlveyChain ecosystem",
+    "allCategories": "All Categories",
+    "featured": "Featured",
+    "noAppsFound": "No applications found matching your search criteria",
+    "categories": {
+      "defi": "DeFi",
+      "nft": "NFT",
+      "games": "Games",
+      "tools": "Tools",
+      "social": "Social",
+      "creator": "Creator",
+      "metaverse": "Metaverse",
+      "analytics": "Analytics",
+      "education": "Education",
+      "governance": "Governance",
+      "bridges": "Bridges"
+    },
+    "searchPlaceholder": "Search apps...",
+    "appCard": {
+      "launch": "Launch",
+      "comingSoon": "Coming Soon",
+      "new": "New",
+      "popular": "Popular"
+    },
+    "apps": {
+      "decentraland": {
+        "description": "Connect to Decentraland metaverse and import/export your AlveyChain NFTs"
+      },
+      "sandbox": {
+        "description": "Build and play in The Sandbox world with your NFTs"
+      },
+      "opensea": {
+        "description": "Bridge your AlveyChain NFTs to OpenSea marketplace"
+      },
+      "aave": {
+        "description": "Use your NFTs as collateral for loans"
+      },
+      "aiGenerator": {
+        "name": "AI Creation Tool",
+        "description": "AI-assisted 3D model and virtual space generation"
+      },
+      "virtualEvents": {
+        "name": "Virtual Events Platform",
+        "description": "Host social events and meetings in your virtual spaces"
+      },
+      "somniumSpace": {
+        "description": "Premium VR metaverse experience with your NFTs"
+      },
+      "voxels": {
+        "description": "Voxel-based virtual world where you can import your 3D NFTs"
+      },
+      "rarible": {
+        "description": "Bridge your NFTs to Rarible for selling"
+      },
+      "blur": {
+        "description": "Professional NFT trading platform for advanced traders"
+      },
+      "nftfi": {
+        "description": "P2P NFT lending platform to maximize your NFT value"
+      },
+      "uniswap": {
+        "description": "Use your liquidity provider NFTs for DeFi trading"
+      },
+      "paraswap": {
+        "description": "Multi-chain aggregator for best NFT trading prices"
+      },
+      "nftGenerator": {
+        "name": "Batch NFT Generator",
+        "description": "Tools for quickly creating NFT collections with trait management"
+      },
+      "midjourney": {
+        "description": "AI tool for generating 3D models from text"
+      },
+      "blenderWeb": {
+        "description": "Simplified Blender 3D modeling tool running in browser"
+      },
+      "nftSocial": {
+        "name": "NFT Social Network",
+        "description": "Social platform designed for NFT collectors and creators"
+      },
+      "metaverseChat": {
+        "name": "Metaverse Chat",
+        "description": "Real-time communication with other users in virtual spaces"
+      },
+      "axieInfinity": {
+        "description": "Import your NFTs as game characters"
+      },
+      "godsUnchained": {
+        "description": "NFT-based digital card game"
+      },
+      "illuvium": {
+        "description": "Open world RPG game using NFT characters"
+      },
+      "nftScoring": {
+        "name": "NFT Scoring System",
+        "description": "Use AI to analyze and evaluate market value of NFTs"
+      },
+      "nftAnalytics": {
+        "name": "NFT Market Analytics",
+        "description": "Track NFT market trends, trading volume, and price movements"
+      },
+      "nftAcademy": {
+        "name": "NFT Academy",
+        "description": "Learn courses on creating, trading, and maximizing NFT value"
+      },
+      "modelingCourses": {
+        "name": "3D Modeling Courses",
+        "description": "Beginner to professional 3D modeling and animation tutorials"
+      },
+      "metaverseOffice": {
+        "name": "Metaverse Office",
+        "description": "Virtual office spaces and meeting rooms for businesses"
+      },
+      "virtualStorefront": {
+        "name": "Virtual Storefront",
+        "description": "Create brand flagship stores and showrooms in the metaverse"
+      },
+      "nftMusic": {
+        "name": "NFT Music Platform",
+        "description": "Create, buy and trade music NFTs"
+      },
+      "virtualConcerts": {
+        "name": "Virtual Concerts",
+        "description": "Host and attend virtual concerts in the metaverse"
+      }
+    }
+  },
+  "gameCenter": {
+    "title": "Game Center",
+    "subtitle": "Complete tasks and challenges to earn rewards",
+    "level": "Level",
+    "points": "Points",
+    "experience": "Experience",
+    "tasks": {
+      "title": "Daily Tasks",
+      "completed": "Completed",
+      "progress": "Progress"
+    },
+    "achievements": {
+      "title": "Achievements",
+      "unlocked": "Unlocked"
+    },
+    "leaderboard": {
+      "title": "Monthly Leaderboard",
+      "rank": "Your Rank"
+    },
+    "weeklyChallenge": {
+      "endDate": "Ends on",
+      "participants": "Participants",
+      "reward": "Point Reward",
+      "viewHistory": "View History Challenges"
+    },
+    "rewardStore": {
+      "title": "Reward Store",
+      "availablePoints": "Available Points",
+      "exchange": "Exchange",
+      "locked": "Locked"
+    }
+  },
+  "dynamicNFT": {
+    "evolution": "Evolution",
+    "phase": "Phase",
+    "loading": "Loading model...",
+    "error": "Failed to load model",
+    "vrCompatible": "VR"
+  },
+  "encyclopedia": {
+    "title": "AlveyChain Encyclopedia",
+    "subtitle": "Explore popular applications, tools, and guides in the AlveyChain ecosystem",
+    "searchPlaceholder": "Search encyclopedia content...",
+    "featured": "Featured Content",
+    "noEntriesFound": "No matching content found",
+    "resetSearch": "Reset Search",
+    "backToList": "Back to List",
+    "relatedApps": "Related Applications",
+    "tutorial": "Tutorial Video",
+    "categories": {
+      "all": "All Categories",
+      "basics": "Basics",
+      "dapps": "Applications",
+      "defi": "DeFi",
+      "nft": "NFT",
+      "tools": "Tools",
+      "faq": "FAQ"
+    },
+    "entries": {
+      "alveyChainIntro": {
+        "title": "AlveyChain Introduction",
+        "description": "Basic introduction and technical features of the AlveyChain blockchain network",
+        "content": "AlveyChain is a high-performance blockchain network developed and maintained by the Alvey Foundation. It uses a POS (Proof-of-Stake) consensus mechanism to ensure low fees and fast transactions.\n\nThe AlveyChain network has a Chain ID of 3797 and features Ethereum compatibility, allowing developers to easily migrate applications from Ethereum to AlveyChain. This compatibility makes AlveyChain a developer-friendly choice while providing users with a rich application ecosystem.\n\nAlveyChain's core advantages include high throughput, low transaction fees, fast confirmation times, and seamless compatibility with Ethereum development tools and wallets."
+      },
+      "wallets": {
+        "title": "Compatible Wallets",
+        "description": "Various cryptocurrency wallets supporting AlveyChain and how to use them",
+        "content": "The AlveyChain network is compatible with various popular wallets, allowing users to easily manage their assets and interact with DApps.\n\nThe main supported wallets include:\n\n1. MetaMask - The most popular Ethereum-compatible wallet that can support AlveyChain by adding the AlveyChain network (Chain ID: 3797).\n\n2. AlveyWallet - The officially developed native wallet, optimized for the AlveyChain network.\n\n3. Trust Wallet - A mobile multi-currency wallet that supports AlveyChain and its tokens.\n\n4. Coin98 - A cross-chain wallet supporting management of assets across multiple blockchains.\n\nTo connect to the AlveyChain network, users need to add a custom network in their wallet and set the correct RPC URL, Chain ID, and native token name."
+      },
+      "nftMarketplace": {
+        "title": "NFT Marketplace",
+        "description": "NFT trading platforms on AlveyChain and their features",
+        "content": "AlveyChain hosts multiple NFT marketplace platforms that allow users to create, sell, and collect unique digital assets.\n\nThe main NFT marketplaces include:\n\n1. MetaverseX - A marketplace focused on 3D and VR/AR NFTs, supporting dynamic NFT functionality that allows NFTs to evolve based on market data, user interaction, and time progression.\n\n2. AlveyNFT - An officially supported comprehensive NFT marketplace that supports various NFT formats and collections.\n\n3. ArtAlvey - An NFT platform focused on digital artwork, providing artists with a place to showcase and sell their works.\n\nNFT transactions on AlveyChain typically have extremely low Gas fees, making it more economical for creators and collectors to participate in the NFT ecosystem. The platforms also offer innovative features such as batch minting, lazy minting, and gasless minting."
+      },
+      "metaverseX": {
+        "title": "MetaverseX Platform",
+        "description": "The leading 3D NFT and virtual space platform on AlveyChain",
+        "content": "MetaverseX is the most innovative 3D NFT platform on AlveyChain, offering immersive virtual space experiences.\n\nThe platform's main features include:\n\n1. 3D NFT Creation and Trading - Users can upload, mint, and trade 3D models as NFTs, supporting various 3D formats.\n\n2. Dynamic NFTs - An innovative dynamic NFT system that allows NFTs to change and evolve based on market data, user interaction, and time progression.\n\n3. Virtual Space Building - Users can create their own virtual exhibition rooms, galleries, and social spaces to showcase their NFT collections.\n\n4. VR/AR Support - Comprehensive support for VR and AR devices, providing immersive experiences while remaining compatible with regular device access.\n\n5. AI-Assisted Creation - Integration of an AI assistant to help users create 3D models and design virtual spaces.\n\nMetaverseX has become one of the flagship projects on AlveyChain, connecting NFTs, the metaverse, and blockchain technology."
+      },
+      "alveySwap": {
+        "title": "AlveySwap",
+        "description": "Decentralized exchange on AlveyChain",
+        "content": "AlveySwap is the leading decentralized exchange (DEX) on AlveyChain, allowing users to exchange tokens without intermediaries.\n\nAlveySwap's main features include:\n\n1. Automated Market Maker (AMM) Model - Uses liquidity pools to facilitate token exchanges without order books.\n\n2. Low Transaction Fees - Benefits from AlveyChain's low Gas fees, significantly lower than DEXs on Ethereum.\n\n3. Liquidity Mining - Users can earn ASWAP governance tokens by providing liquidity.\n\n4. Cross-Chain Exchange - Supports asset bridging and exchange with other blockchain networks.\n\n5. Farms and Pools - Offers various DeFi mining opportunities to increase yields.\n\nWith AlveySwap, traders can easily exchange tokens on the AlveyChain network, while liquidity providers can earn a share of transaction fees and additional token rewards."
+      },
+      "alveyBridge": {
+        "title": "AlveyBridge",
+        "description": "Cross-chain bridge connecting AlveyChain with other blockchain networks",
+        "content": "AlveyBridge is the official cross-chain bridge connecting AlveyChain with other blockchain networks, allowing users to transfer assets between different networks.\n\nMain features include:\n\n1. Multi-Chain Support - Supports asset transfers with Ethereum, BSC, Polygon, and other major blockchains.\n\n2. Token and NFT Bridging - Supports not only token transfers but also cross-chain transfers of NFTs.\n\n3. Fast Confirmation - Most transfers complete confirmation within minutes.\n\n4. Security Guarantees - Uses multi-signature and timelock mechanisms to ensure asset security.\n\n5. Low Fees - Provides more economical transfer fees compared to other cross-chain bridges.\n\nUsing AlveyBridge, users can transfer assets from Ethereum or other networks to AlveyChain, enjoying low fees and efficient transaction experiences, and can also transfer assets from AlveyChain back to other networks."
+      },
+      "staking": {
+        "title": "Staking Mechanism",
+        "description": "AlveyChain's staking system and reward mechanism",
+        "content": "AlveyChain uses a Proof-of-Stake (POS) consensus mechanism, allowing users to earn rewards by staking ALVEY tokens to participate in network validation.\n\nMain features of the staking system:\n\n1. Validator Nodes - Users need to stake a minimum of 100,000 ALVEY to run a validator node.\n\n2. Delegation - Smaller holders can delegate tokens to existing validators to share rewards.\n\n3. Reward Mechanism - Validators and delegators receive block rewards and transaction fee shares based on their staking ratio.\n\n4. Unbonding Period - Withdrawing staked tokens requires a 14-day unbonding period.\n\n5. Slashing Mechanism - Malicious behavior results in reduction (slashing) of staked tokens.\n\nThrough staking, ALVEY holders can not only earn passive income but also participate in network governance decisions, jointly maintaining AlveyChain's security and decentralization."
+      },
+      "blockExplorer": {
+        "title": "Block Explorer",
+        "description": "AlveyChain's block explorer and usage guide",
+        "content": "AlveyScan is AlveyChain's official block explorer, allowing users to query and track on-chain transactions, addresses, tokens, and smart contracts.\n\nMain features include:\n\n1. Transaction Query - View detailed transaction information including status, Gas usage, and contract interactions via transaction hash.\n\n2. Address Monitoring - View any address's balance, transaction history, and token holdings.\n\n3. Smart Contract Verification - Developers can verify and publish contract source code to increase transparency.\n\n4. Token Information - View information for all tokens on AlveyChain, including total supply, number of holders, and trading volume.\n\n5. Network Statistics - Provides real-time network status including TPS, block height, active addresses, and other data.\n\n6. API Services - Offers rich API interfaces for developers to build applications and analysis tools.\n\nAlveyScan is an essential tool for researching, analyzing, and verifying activities on the AlveyChain network."
+      },
+      "mintNFT": {
+        "title": "NFT Minting Guide",
+        "description": "Detailed steps to create and mint NFTs on AlveyChain",
+        "content": "Minting NFTs on AlveyChain is a simple and low-cost process. This guide will help you complete all necessary steps.\n\nBasic process for minting NFTs:\n\n1. Prepare Digital Content - Can be images, videos, 3D models, or audio files. Ensure you own the content's copyright.\n\n2. Choose an NFT Platform - Can use MetaverseX, AlveyNFT, or other platforms, or directly use smart contracts.\n\n3. Connect Wallet - Use MetaMask or other wallets to connect to the AlveyChain network.\n\n4. Upload Content - Upload digital content to decentralized storage like IPFS.\n\n5. Set NFT Attributes - Add name, description, price, and royalty settings.\n\n6. Mint NFT - Confirm the transaction and pay a small Gas fee.\n\n7. List for Sale - List the NFT on the marketplace for others to purchase.\n\nThe main advantage of minting NFTs on AlveyChain is the extremely low Gas fees, making batch minting and various experimental creations economically feasible."
+      },
+      "dynamicNFTs": {
+        "title": "Dynamic NFT Technology",
+        "description": "Innovative dynamic NFT technology on AlveyChain and its applications",
+        "content": "Dynamic NFTs are an innovative technology on AlveyChain that can change based on external data, user interaction, and time progression, bringing a whole new dimension to NFTs.\n\nMain features of dynamic NFTs:\n\n1. Data-Driven Changes - NFTs can change their appearance or attributes based on market data, price trends, or external events.\n\n2. Evolution System - NFTs can upgrade and evolve to new stages as time passes or specific conditions are met.\n\n3. Interactive Response - Changes based on user interaction behaviors such as browsing, clicking, or activities in games.\n\n4. On-Chain and Off-Chain Updates - Supports recording key state changes on-chain while using off-chain rendering to reduce costs.\n\n5. Application Scenarios - Game character growth, artwork evolution, membership card upgrades, collectible appreciation, etc.\n\nThe MetaverseX platform has implemented comprehensive dynamic NFT support, allowing creators to design multi-stage evolving NFTs, providing collectors with more interactive and long-term valuable digital assets."
+      },
+      "yieldFarming": {
+        "title": "Yield Farming",
+        "description": "Yield farming strategies and platforms on AlveyChain",
+        "content": "Yield farming is an important component of the DeFi space, allowing users to earn yields by providing liquidity and participating in various DeFi protocols.\n\nMain forms of yield farming on AlveyChain:\n\n1. Liquidity Mining - Provide liquidity to DEXs to earn transaction fees and additional token rewards.\n\n2. Lending Platforms - Earn interest on deposits, or borrow and stake to earn reward tokens.\n\n3. Single Token Staking - Stake single tokens to earn fixed or variable returns.\n\n4. LP Token Staking - Stake LP tokens received after providing liquidity to earn additional yields.\n\n5. Auto-Compounding - Automatically reinvest earnings to achieve compound growth.\n\nMajor platforms include AlveySwap, AlveyYield, and AlveyLend. Due to AlveyChain's low Gas fees, even small investors can effectively participate in yield farming without worrying about high transaction costs eroding their returns."
+      },
+      "alveyDAO": {
+        "title": "AlveyDAO",
+        "description": "AlveyChain's decentralized autonomous organization",
+        "content": "AlveyDAO is the decentralized autonomous organization of the AlveyChain ecosystem, responsible for network governance and management of community funds.\n\nMain features include:\n\n1. Governance Mechanism - Token holders can submit proposals and vote on key decisions such as network parameter changes and fund allocations.\n\n2. Community Treasury - Manages funds accumulated from transaction fees, inflation allocations, and other sources for ecosystem development.\n\n3. Proposal Process - Any user holding sufficient governance tokens can submit proposals, which are executed after discussion and voting.\n\n4. Delegation System - Users can delegate their voting rights to representatives, simplifying the participation process.\n\n5. Transparent Execution - All decisions and fund flows are fully public on-chain, ensuring transparency.\n\nThe existence of AlveyDAO ensures decentralized governance of AlveyChain, allowing community members to directly participate in the network's development direction and resource allocation."
+      },
+      "alveyGames": {
+        "title": "AlveyChain Games",
+        "description": "Blockchain games and GameFi projects on AlveyChain",
+        "content": "AlveyChain is becoming a popular choice for blockchain game developers, mainly due to its low fees and high-speed transactions.\n\nMain game types include:\n\n1. Play-to-Earn Games - Players earn tradable tokens and NFTs through game activities.\n\n2. Strategy and Collection Games - Collect, nurture, and trade NFT characters or items in games.\n\n3. Metaverse Games - Purchase land, build, and socially interact in virtual worlds.\n\n4. Gambling and Lottery - Transparent blockchain-based gambling and lottery systems.\n\n5. Turn-Based and Card Games - Strategy games using NFTs as game cards.\n\nPopular games include AlveyMonsters, CryptoEmpires, and MetaRacing. AlveyChain's gaming ecosystem is rapidly developing, providing diverse choices for players and investors."
+      },
+      "networkIssues": {
+        "title": "Common Network Issues",
+        "description": "Common issues with the AlveyChain network and their solutions",
+        "content": "Common issues you might encounter when using AlveyChain and their solutions:\n\n1. Stuck Transactions\n   - Issue: Transactions not confirmed for a long time\n   - Solution: Try resending the transaction with a higher Gas price, or wait for network congestion to ease\n\n2. Wallet Connection Issues\n   - Issue: Wallet cannot connect to AlveyChain network\n   - Solution: Check network configuration parameters, ensure RPC URL and Chain ID are correct\n\n3. Invisible Assets\n   - Issue: Transferred tokens not visible in wallet\n   - Solution: Manually add token contract address to wallet\n\n4. Cross-Chain Transfer Delays\n   - Issue: Cross-chain bridge transfers not arriving for a long time\n   - Solution: Check transaction status on source and destination chains, contact bridge service support\n\n5. Smart Contract Interaction Failures\n   - Issue: Failed interactions with DApps\n   - Solution: Ensure wallet has enough ALVEY to pay Gas, check if contract is paused\n\nMost issues can be resolved by refreshing the browser, restarting the wallet application, or updating to the latest version. For persistent issues, seek support through the official community."
+      },
+      "tokenomics": {
+        "title": "Tokenomics",
+        "description": "ALVEY token's economic model and distribution mechanism",
+        "content": "ALVEY is AlveyChain's native token, used for paying transaction fees, participating in network governance, and staking.\n\nMain features of the token economics:\n\n1. Total Supply - The total supply of ALVEY tokens is 1 billion, using a deflationary model.\n\n2. Token Distribution - Initial distribution includes team (15%), foundation (20%), ecosystem development (25%), community airdrop (10%), and public sale (30%).\n\n3. Deflationary Mechanism - A portion of transaction fees gets burned, reducing total supply as usage increases.\n\n4. Staking Rewards - Validators and delegators receive new block rewards based on their staking ratio.\n\n5. Governance Rights - ALVEY holders can submit and vote on network parameter adjustments and protocol upgrades.\n\n6. Use Cases - Paying transaction fees, staking for yields, participating in DAO voting, getting platform discounts, etc.\n\nThe economic model of ALVEY tokens aims to create long-term value. As network usage increases and the ecosystem expands, token demand is expected to increase."
+      }
+    }
+  },
+  "errors": {
+    "walletNotInstalled": "MetaMask is not installed",
+    "connectionError": "Connection error",
+    "networkError": "Please switch to AlveyChain network",
+    "contractNotDeployed": "Contracts not configured, please deploy first",
+    "notAuthenticated": "Please connect your wallet",
+    "insufficientFunds": "Insufficient funds",
+    "transactionFailed": "Transaction failed",
+    "fileUploadFailed": "File upload failed",
+    "fileTooBig": "File size exceeds limit",
+    "unsupportedFormat": "Unsupported file format"
+  },
+  "explore": {
+    "title": "Explore New Features",
+    "comingSoon": "More Features Coming Soon",
+    "comingSoonDesc": "We are constantly developing new features, stay tuned!"
+  },
+  "footer": {
+    "platform": "AlveyChain Metaverse Trading Platform",
+    "supportInfo": "Supports all devices, no VR headset required"
+  },
+  "translation": {
+    "common": {
+      "loading": "Loading...",
+      "error": "An error occurred",
+      "back": "Back",
+      "next": "Next",
+      "save": "Save",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "edit": "Edit",
+      "view": "View",
+      "notFound": "Not Found"
+    },
+    "appHub": {
+      "title": "App Hub",
+      "subtitle": "Explore popular and mature applications in the AlveyChain ecosystem",
+      "connectWalletHeading": "Connect your wallet to get started",
+      "connectWalletDescription": "Connect your wallet to get personalized recommendations and track your recently used apps.",
+      "connectWallet": "Connect Wallet",
+      "walletNotDetected": "No wallet detected. Please install MetaMask or another compatible wallet.",
+      "recentlyUsed": "Recently Used",
+      "searchPlaceholder": "Search apps...",
+      "launch": "Launch",
+      "launchApp": "Launch App",
+      "featured": "Featured Apps",
+      "noAppsFound": "No apps found matching your criteria",
+      "resetFilters": "Reset Filters",
+      "users": "users",
+      "mature": "Mature",
+      "beta": "Beta",
+      "thirdParty": "Third-party",
+      "categories": {
+        "all": "All Categories",
+        "exchange": "Exchanges",
+        "defi": "DeFi",
+        "nft": "NFT",
+        "gaming": "Gaming",
+        "metaverse": "Metaverse",
+        "social": "Social",
+        "tools": "Tools",
+        "bridge": "Bridges"
+      },
+      "apps": {
+        "alveyswap": {
+          "description": "Native DEX on AlveyChain offering low slippage and high liquidity",
+          "longDescription": "AlveySwap is a native decentralized exchange on AlveyChain, offering token swaps, liquidity mining, and staking. Through its efficient Automated Market Maker (AMM) mechanism, users enjoy trading with low slippage and high liquidity."
+        },
+        "alveybridge": {
+          "description": "Cross-chain bridge connecting AlveyChain with other major blockchain networks",
+          "longDescription": "AlveyBridge allows users to seamlessly transfer assets between AlveyChain and other major blockchains like Ethereum, BSC, and Polygon. It provides fast confirmations and low-fee cross-chain experience, supporting both tokens and NFTs."
+        },
+        "alveylend": {
+          "description": "Borrow and lend assets on AlveyChain with support for multiple tokens and competitive rates",
+          "longDescription": "AlveyLend is a decentralized lending protocol where users can deposit assets to earn interest or borrow against collateral. It supports various collateral types including NFTs, and offers competitive rates and liquidity mining incentives."
+        },
+        "alveynft": {
+          "description": "Native NFT marketplace with 3D model support, auctions, and secondary market trading",
+          "longDescription": "AlveyNFT is the native NFT marketplace for AlveyChain, specifically designed for 3D NFTs with high-quality rendering and interactive previews. Users can mint, buy, and sell NFTs with support for various auction types and secondary market trading."
+        },
+        "alveymonsters": {
+          "description": "NFT-based collect and battle game built on AlveyChain",
+          "longDescription": "AlveyMonsters is a play-to-earn game where players collect, breed, and battle digital monsters. All game assets are on-chain NFTs that can be traded in marketplaces, and in-game activities earn token rewards."
+        },
+        "alveyscan": {
+          "description": "Block explorer for AlveyChain providing complete information on transactions, contracts, and addresses",
+          "longDescription": "AlveyScan is the official block explorer for AlveyChain, providing users with complete information on blocks, transactions, contracts, and accounts. It also offers API access and advanced analytics tools to help developers and users better understand on-chain activity."
+        },
+        "alveystake": {
+          "description": "Stake AlveyChain tokens to earn network rewards and governance rights",
+          "longDescription": "AlveyStake allows users to stake tokens to secure the network and earn rewards. Stakers can also participate in governance voting to decide on network parameters and protocol upgrades. It offers flexible staking periods and multiple reward distribution mechanisms."
+        },
+        "alveyindex": {
+          "description": "Index funds for the AlveyChain ecosystem, allowing users to gain broad exposure via a single token",
+          "longDescription": "AlveyIndex provides a series of index-based tokens representing baskets of assets from different sectors (such as DeFi, NFT, Gaming) in the AlveyChain ecosystem. Users can gain broad diversification by holding a single index token."
+        },
+        "alveyart": {
+          "description": "NFT creation and trading platform focused on digital artwork",
+          "longDescription": "AlveyArt is an NFT platform designed for artists and creators, offering advanced creation tools, curated exhibitions, and artist communities. It supports various art forms including 2D artwork, 3D models, and immersive experiences."
+        },
+        "alveymeta": {
+          "description": "AlveyChain metaverse where users can purchase and develop virtual land",
+          "longDescription": "AlveyMeta is the native metaverse for AlveyChain where users can buy, develop, and customize virtual land. It provides powerful creation tools and social features, supporting events, games, and commercial applications. Users can import NFTs and showcase them in virtual spaces."
+        },
+        "alveypools": {
+          "description": "Liquidity mining and yield aggregation platform with automated yield optimization strategies",
+          "longDescription": "AlveyPools is a liquidity mining and yield aggregation platform that automatically finds and optimizes yield strategies for users. It offers single asset staking, LP token mining, and compounding features, reducing operational costs and risks for users."
+        },
+        "alveydex": {
+          "description": "Professional-grade DEX with limit orders and advanced trading features",
+          "longDescription": "AlveyDEX is a decentralized exchange targeted at professional traders, offering orderbook trading and advanced features. It supports limit orders, stop-losses, and leveraged trading while maintaining non-custodial asset management and transparent trading."
+        },
+        "alchemy": {
+          "description": "Developer tools and infrastructure services for AlveyChain",
+          "longDescription": "Alchemy provides powerful APIs, node services, and development tools for AlveyChain developers, simplifying the blockchain application building process. It offers reliable infrastructure, monitoring tools, and analytics services to help developers create high-quality decentralized applications."
+        },
+        "alveydao": {
+          "description": "Governance organization for the AlveyChain ecosystem with community proposals and voting",
+          "longDescription": "AlveyDAO is the decentralized autonomous organization governing the AlveyChain ecosystem and resource allocation. Users holding governance tokens can submit proposals and participate in voting to decide on important matters such as protocol upgrades, parameter adjustments, and fund allocations."
+        },
+        "alveypay": {
+          "description": "Crypto payment solution for merchants and businesses",
+          "longDescription": "AlveyPay provides a complete solution for merchants to integrate cryptocurrency payments. It supports multiple token payment options, automated settlements, and detailed transaction reporting, while offering a user-friendly interface and multi-platform integration options."
+        },
+        "uniswap": {
+          "description": "Leading decentralized exchange with concentrated liquidity and multi-chain support",
+          "longDescription": "Uniswap V3 is the most popular DEX on Ethereum, offering an innovative concentrated liquidity model that significantly improves capital efficiency. Uniswap has integrated AlveyChain support, allowing users to trade in a low-cost and high-speed environment."
+        },
+        "aave": {
+          "description": "Decentralized lending protocol with variable rates and flash loans",
+          "longDescription": "Aave is a leading DeFi lending protocol allowing users to deposit to earn interest or borrow assets. It offers variable and stable rate options, flash loan functionality, and supports multiple asset types. On AlveyChain, Aave benefits from low gas fees and fast confirmations."
+        },
+        "yearn": {
+          "description": "Automated yield aggregator optimizing DeFi strategies",
+          "longDescription": "Yearn Finance is a smart yield aggregator that automatically moves funds between different DeFi protocols to optimize yield. It simplifies complex yield farming strategies for users, offering auto-compounding and risk diversification. On AlveyChain, Yearn provides strategies optimized for the native ecosystem."
+        },
+        "nftfi": {
+          "description": "NFT-based lending marketplace turning NFTs into liquid assets",
+          "longDescription": "NFTfi allows users to borrow cryptocurrency using their NFTs as collateral, providing liquidity for otherwise illiquid assets. It uses a P2P model where lenders can offer customized loan terms based on NFT value. The platform supports various NFT standards, including 3D NFTs from AlveyChain."
+        },
+        "blur": {
+          "description": "Advanced NFT trading platform for professional traders",
+          "longDescription": "Blur is a marketplace designed for professional NFT traders, offering advanced trading tools, real-time data, and bulk operations. Its interface is optimized for efficient trading, supporting sweep bots and quick pricing. Blur's integration with AlveyChain allows users to trade NFT assets cross-chain."
+        },
+        "foundation": {
+          "description": "Curated art NFT platform supporting creators and collectors",
+          "longDescription": "Foundation is a curated NFT platform focused on high-quality digital art. It maintains content quality and authenticity through an invitation system and community support. The platform offers powerful exhibition tools and fair revenue models for artists, while providing authentic provenance for collectors."
+        },
+        "sandbox": {
+          "description": "User-created virtual world for owning and trading virtual land and assets",
+          "longDescription": "The Sandbox is a user-created virtual world where players can own, create, and monetize gaming experiences. It provides powerful creation tools allowing users to design games, buildings, and virtual assets. Integration with AlveyChain lets users import their NFTs into Sandbox environments and trade assets cross-chain."
+        },
+        "decentraland": {
+          "description": "Decentralized virtual reality platform where users own and create content",
+          "longDescription": "Decentraland is a decentralized virtual reality platform consisting of user-owned digital parcels of land. Users can create interactive experiences, host events, and establish businesses on their land. Through AlveyChain integration, users can seamlessly import 3D NFTs and transfer assets between multiple chains."
+        },
+        "illuvium": {
+          "description": "AAA open-world RPG game combining collection and battle elements",
+          "longDescription": "Illuvium is a high-quality open-world RPG game where players explore the world, capture, and train creatures called Illuvials. The game features AAA-level graphics and deep gameplay mechanics, with all game assets being tradeable NFTs. AlveyChain integration provides a lower-cost transaction environment for the game."
+        },
+        "axie": {
+          "description": "Popular NFT game where players breed and battle cute creatures",
+          "longDescription": "Axie Infinity is a pioneer in blockchain gaming where players collect, breed, and battle cute creatures called Axies. All game assets are NFTs that can be traded in marketplaces. Its play-to-earn (P2E) model has transformed game economies worldwide. AlveyChain integration lowers the entry barrier with cheaper transactions."
+        },
+        "layerzero": {
+          "description": "Omnichain messaging protocol securely connecting multiple blockchains",
+          "longDescription": "LayerZero is an omnichain messaging protocol that enables applications to run seamlessly across multiple blockchains. It provides reliable cross-chain communication through an innovative security model while maintaining decentralization. LayerZero's integration with AlveyChain greatly enhances ecosystem interoperability, allowing assets and data to flow freely between blockchains."
+        },
+        "chainlink": {
+          "description": "Decentralized oracle network connecting smart contracts to real-world data",
+          "longDescription": "Chainlink is the most widely used oracle network in blockchain, providing reliable off-chain data to smart contracts. It supports price data feeds, random number generation, and API calls, ensuring smart contracts can securely interact with external systems. On AlveyChain, Chainlink provides verified off-chain data for DApps."
+        },
+        "lens": {
+          "description": "Decentralized social graph protocol where users own their social data",
+          "longDescription": "Lens Protocol is a decentralized social graph protocol where users own their content, followers, and social presence. It allows creators to carry social data across applications, solving platform risk issues. Integration with AlveyChain enriches metaverse social experiences, deeply integrating NFTs with social interactions."
+        }
+      }
+    },
+    "appConnector": {
+      "loading": "Loading application...",
+      "connecting": "Connecting...",
+      "errorTitle": "Loading Error",
+      "loadError": "Unable to load application",
+      "connectionError": "Failed to connect to application",
+      "appError": "Application encountered an error",
+      "retry": "Retry",
+      "refresh": "Refresh",
+      "openExternal": "Open in Browser",
+      "openInNewTab": "Open in New Tab",
+      "openApp": "Open App",
+      "connectFirst": "Connect Wallet First",
+      "integrationInfo": "Integration Information",
+      "apiModeDescription": "This application integrates with MetaverseX platform via API. Click the button below to use it in a new window."
+    }
+  }
+} 

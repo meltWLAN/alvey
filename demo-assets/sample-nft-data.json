@@ -1,0 +1,50 @@
+{
+  "name": "宝石骑士",
+  "description": "这是一个拥有特殊宝石能量的未来骑士，在AlveyChain元宇宙中拥有特殊权限。",
+  "image": "https://bafybeihjjkwdrxxjnuwevlqtqmh3iegcadc6xebweufcs4x6y4x6tckx5q.ipfs.nftstorage.link/gemknight.png",
+  "animation_url": "https://bafybeihjjkwdrxxjnuwevlqtqmh3iegcadc6xebweufcs4x6y4x6tckx5q.ipfs.nftstorage.link/gemknight.glb",
+  "attributes": [
+    {
+      "trait_type": "背景",
+      "value": "未来科技"
+    },
+    {
+      "trait_type": "武器",
+      "value": "宝石剑"
+    },
+    {
+      "trait_type": "稀有度",
+      "value": "史诗级"
+    },
+    {
+      "trait_type": "元素",
+      "value": "水晶"
+    },
+    {
+      "trait_type": "防御力",
+      "value": 85,
+      "max_value": 100
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 92,
+      "max_value": 100
+    }
+  ],
+  "properties": {
+    "vrCompatible": true,
+    "format": "glb",
+    "creator": "AlveyChain工作室",
+    "category": "人物",
+    "files": [
+      {
+        "uri": "https://bafybeihjjkwdrxxjnuwevlqtqmh3iegcadc6xebweufcs4x6y4x6tckx5q.ipfs.nftstorage.link/gemknight.glb",
+        "type": "model/gltf-binary"
+      },
+      {
+        "uri": "https://bafybeihjjkwdrxxjnuwevlqtqmh3iegcadc6xebweufcs4x6y4x6tckx5q.ipfs.nftstorage.link/gemknight.png",
+        "type": "image/png"
+      }
+    ]
+  }
+} 

@@ -1,16 +1,17 @@
 const hre = require("hardhat");
 
 async function main() {
-  const [deployer] = await ethers.getSigners();
-  console.log("Deploying contracts with the account:", deployer.address);
+  console.log("Deploying AlveyNFT contract...");
 
-  // Mario代币合约地址
-  const MARIO_TOKEN_ADDRESS = "0x0D8318C1C2C36a1f614Ca17af77Cb3D5c0cC7e10";
+  // 假设的 ERC20 代币地址，在本地测试网上不会真实存在
+  const dummyTokenAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 
-  const nft = await hre.ethers.deployContract("AlveyNFT", [MARIO_TOKEN_ADDRESS]);
-  await nft.waitForDeployment();
+  const AlveyNFT = await hre.ethers.getContractFactory("AlveyNFT");
+  const alveyNFT = await AlveyNFT.deploy(dummyTokenAddress);
 
-  console.log("AlveyNFT deployed to:", await nft.getAddress());
+  await alveyNFT.waitForDeployment();
+
+  console.log("AlveyNFT deployed to:", await alveyNFT.getAddress());
 }
 
 main()
