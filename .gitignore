@@ -4,31 +4,32 @@ node_modules
 .pnp.js
 
 # 构建输出
-/build
 /dist
-.next
-out
-dist
-.cache
-.parcel-cache
+/build
 
-# 环境变量文件
+# 环境变量
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-.env.production
 
 # 日志
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# 其他
+# 编辑器文件
 .DS_Store
 .idea
 .vscode
+
+# 其他
+.next
+out
+dist
+.cache
+.parcel-cache
 *.swp
 *.swo
 hardhat_node.log

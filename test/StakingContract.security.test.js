@@ -1,5 +1,6 @@
 import { expect } from "chai";
-import { ethers } from "hardhat";
+import pkg from 'hardhat';
+const { ethers } = pkg;
 import { time } from "@nomicfoundation/hardhat-network-helpers";
 
 describe("StakingContract Security Tests", function () {
@@ -300,7 +301,7 @@ describe("StakingContract Security Tests", function () {
       
       // Try to claim rewards (should fail)
       await expect(stakingContract.connect(staker1).claimReward(tokenId))
-        .to.be.revertedWith("Reward transfer failed");
+        .to.be.revertedWith("ERC20: transfer amount exceeds balance");
     });
   });
-}); 
+});

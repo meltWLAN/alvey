@@ -10,11 +10,11 @@ export const alveychain = {
     symbol: 'ALV',
   },
   rpcUrls: {
-    public: { http: ['https://elves-core1.alvey.io'] },
-    default: { http: ['https://elves-core1.alvey.io'] },
+    public: { http: ['https://elves-core1.alvey.io/', 'https://elves-core2.alvey.io/', 'https://elves-core3.alvey.io/'] },
+    default: { http: ['https://elves-core1.alvey.io/', 'https://elves-core2.alvey.io/', 'https://elves-core3.alvey.io/'] },
   },
   blockExplorers: {
-    default: { name: 'AlveyScan', url: 'https://alvey.io' },
+    default: { name: 'AlveyScan', url: 'https://alveyscan.com/' },
   },
   contracts: {
     nft: {
@@ -30,4 +30,4 @@ export const alveychain = {
       abi: [/* MARIO代币ABI */],
     },
   },
-} as const satisfies Chain; 
+} as const satisfies Chain;

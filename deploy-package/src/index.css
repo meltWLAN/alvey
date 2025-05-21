@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gradient-to-b from-gray-900 to-gray-800 text-white min-h-screen;
+  }
+}
+
+@layer components {
+  .btn-gradient {
+    @apply relative overflow-hidden bg-gradient-to-r from-teal-500 to-blue-500 text-white transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .card-3d {
+    @apply bg-gray-800/40 backdrop-blur-md border border-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+  
+  .input-bordered {
+    @apply bg-gray-800/80 border border-gray-700 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-teal-500;
+  }
+  
+  .nav-link {
+    @apply px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-teal-500/10 hover:text-teal-400;
+  }
+  
+  .nav-link-active {
+    @apply bg-teal-500/20 text-teal-400;
+  }
+  
+  .vr-button {
+    @apply btn-gradient flex items-center gap-2 px-4 py-2 rounded-full font-medium;
+  }
+}
+
+/* 滑动动画 */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+.animate-slideOut {
+  animation: slideOut 0.3s ease-in forwards;
+}
+
+/* 视差效果 */
+.parallax-container {
+  @apply relative overflow-hidden;
+}
+
+.parallax-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease-out;
+}
+
+.parallax-layer-0 { z-index: 1; }
+.parallax-layer-1 { z-index: 2; }
+.parallax-layer-2 { z-index: 3; }
+.parallax-layer-3 { z-index: 4; }
+
+/* 浮动动画 */
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+.floating-slow {
+  animation: floating 6s ease-in-out infinite;
+}
+
+.floating-fast {
+  animation: floating 2s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* 渐变文字 */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500;
+}
+
+/* 动态渐变背景 */
+.dynamic-gradient {
+  background: linear-gradient(-45deg, #1a202c, #2d3748, #234e52, #1a4451);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* XR Specific Styles */
+.xr-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.xr-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.xr-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 1001;
+}
+
+/* 3D Model Viewer */
+.model-viewer {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-teal-500/50 rounded-full hover:bg-teal-500;
+}
+
+/* Loading animation */
+.loading-ring {
+  @apply inline-block h-12 w-12 rounded-full border-4 border-teal-500 border-t-transparent animate-spin;
+}
+
+/* 交互式卡片动画 */
+.interactive-card {
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.interactive-card:hover {
+  transform: translateY(-5px) rotateX(5deg);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* 闪光效果 */
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.shine-effect:hover::after {
+  opacity: 1;
+  animation: shine 1.5s forwards;
+}
+
+@keyframes shine {
+  0% {
+    transform: rotate(30deg) translateX(-300%);
+  }
+  100% {
+    transform: rotate(30deg) translateX(300%);
+  }
+}

@@ -1,5 +1,6 @@
 import { expect } from "chai";
-import { ethers } from "hardhat";
+import pkg from 'hardhat';
+const { ethers } = pkg;
 
 describe("NFTLending Contract Tests", function () {
   let NFTLending;
@@ -457,4 +458,4 @@ describe("NFTLending Contract Tests", function () {
       ).to.be.revertedWith("Loan amount exceeds maximum");
     });
   });
-}); 
+});

@@ -1,0 +1,678 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "confirm": "确认",
+    "submit": "提交",
+    "save": "保存",
+    "edit": "编辑",
+    "delete": "删除",
+    "back": "返回",
+    "next": "下一步",
+    "search": "搜索",
+    "filter": "筛选",
+    "sort": "排序",
+    "all": "全部",
+    "platformCompatibility": "平台兼容提示",
+    "vrSupportInfo": "MetaverseX平台同时支持VR设备和普通设备访问。没有VR设备的用户可以正常使用平台的所有功能。",
+    "gotIt": "我知道了",
+    "view": "查看",
+    "notFound": "未找到"
+  },
+  "navbar": {
+    "home": "首页",
+    "marketplace": "NFT市场",
+    "spaces": "虚拟空间",
+    "create": "创建",
+    "profile": "个人主页",
+    "explore": "探索",
+    "connect": "连接钱包",
+    "disconnect": "断开连接"
+  },
+  "auth": {
+    "connectWallet": "连接钱包",
+    "switchNetwork": "切换网络",
+    "walletConnected": "钱包已连接",
+    "walletNotConnected": "钱包未连接",
+    "networkError": "网络错误"
+  },
+  "home": {
+    "title": "欢迎来到MetaverseX",
+    "subtitle": "AlveyChain上的新一代3D NFT平台",
+    "exploreMarketplace": "探索市场",
+    "createNFT": "创建NFT",
+    "featuredNFTs": "精选NFT",
+    "popularCreators": "热门创作者",
+    "recentActivity": "最近活动"
+  },
+  "marketplace": {
+    "title": "NFT市场",
+    "subtitle": "发现、收集和交易独特的3D NFT",
+    "filters": {
+      "category": "类别",
+      "price": "价格",
+      "status": "状态",
+      "format": "格式"
+    },
+    "sort": {
+      "newest": "最新",
+      "oldest": "最早",
+      "priceLowToHigh": "价格: 从低到高",
+      "priceHighToLow": "价格: 从高到低",
+      "popular": "最热门"
+    },
+    "status": {
+      "forSale": "出售中",
+      "auction": "拍卖中",
+      "sold": "已售出",
+      "notForSale": "不出售"
+    }
+  },
+  "nftDetail": {
+    "owner": "拥有者",
+    "creator": "创作者",
+    "description": "描述",
+    "properties": "属性",
+    "price": "价格",
+    "buyNow": "立即购买",
+    "placeOffer": "出价",
+    "viewInVR": "VR查看",
+    "viewHistory": "查看历史",
+    "listed": "上架时间",
+    "created": "创建时间",
+    "format": "格式"
+  },
+  "create": {
+    "title": "创建新NFT",
+    "modelUpload": "模型上传",
+    "thumbnailUpload": "缩略图上传",
+    "supportedFormats": "支持的格式",
+    "maxFileSize": "最大文件大小",
+    "nftDetails": "NFT详情",
+    "name": "名称",
+    "description": "描述",
+    "category": "类别",
+    "tags": "标签",
+    "vrCompatible": "VR兼容",
+    "mint": "铸造NFT",
+    "preview": "预览",
+    "uploadInstructions": "拖放文件至此，或点击选择文件",
+    "uploadSuccess": "上传成功",
+    "uploadError": "上传失败"
+  },
+  "spaces": {
+    "title": "虚拟空间",
+    "createSpace": "创建空间",
+    "mySpaces": "我的空间",
+    "publicSpaces": "公共空间",
+    "popularSpaces": "热门空间",
+    "spaceTypes": {
+      "gallery": "画廊",
+      "showroom": "展示厅",
+      "game": "游戏",
+      "social": "社交"
+    },
+    "spaceSizes": {
+      "small": "小型",
+      "medium": "中型",
+      "large": "大型"
+    }
+  },
+  "profile": {
+    "myNFTs": "我的NFT",
+    "created": "已创建",
+    "collected": "已收藏",
+    "favorites": "收藏夹",
+    "activity": "活动",
+    "editProfile": "编辑资料",
+    "accountDetails": "账户详情",
+    "walletAddress": "钱包地址",
+    "joinDate": "加入日期",
+    "balance": "余额"
+  },
+  "aiAssistant": {
+    "title": "AI助手",
+    "welcomeMessage": "您好！我是您的AI助手。今天有什么可以帮到您的吗？",
+    "inputPlaceholder": "有问题尽管问我...",
+    "tabs": {
+      "chat": "聊天",
+      "create": "创建"
+    },
+    "contextualSuggestions": "为您推荐",
+    "toggleLanguage": "切换语言",
+    "voiceInput": "语音输入",
+    "open": "打开助手",
+    "close": "关闭助手",
+    "languageChanged": "已切换到{{language}}",
+    "beginnerTip": "提示：您可以提出更具体的问题以获得更好的回答。",
+    "advancedTip": "高级提示：您可以使用特定的技术术语以获得精确的结果。",
+    "templateSelection": "我想使用{{template}}模板",
+    "templateConfirmation": "很好的选择！{{template}}模板已准备就绪。",
+    "createModelTitle": "AI创建",
+    "customCreationTitle": "自定义创建",
+    "customCreationDescription": "在AI指导下从头开始创建",
+    "customCreationPrompt": "我想创建一个自定义3D模型",
+    "startCreating": "开始创建",
+    "suggestions": {
+      "platformTour": "平台导览",
+      "gettingStarted": "新手指南",
+      "findNFT": "帮我找NFT",
+      "marketTrends": "当前市场趋势",
+      "createHelp": "如何创建NFT",
+      "modelTips": "3D模型技巧",
+      "nftValuation": "这个NFT如何估值",
+      "similarNFTs": "显示类似NFT",
+      "connectWallet": "如何连接钱包"
+    },
+    "features": {
+      "modelGen": {
+        "title": "生成3D模型",
+        "description": "从文本描述创建3D模型",
+        "prompt": "生成一个未来派宇宙飞船的3D模型"
+      },
+      "sceneGen": {
+        "title": "创建场景",
+        "description": "生成完整的3D环境",
+        "prompt": "创建一个热带岛屿场景"
+      },
+      "creative": {
+        "title": "创意灵感",
+        "description": "获取下一个创作的灵感",
+        "prompt": "给我一些创意NFT想法"
+      },
+      "market": {
+        "title": "市场洞察",
+        "description": "分析趋势并获取推荐",
+        "prompt": "目前有哪些热门NFT类别？"
+      }
+    },
+    "templates": {
+      "spaceship": {
+        "name": "宇宙飞船",
+        "description": "未来派宇宙飞船模板"
+      },
+      "character": {
+        "name": "角色",
+        "description": "人形角色模板"
+      },
+      "building": {
+        "name": "建筑",
+        "description": "建筑结构模板"
+      },
+      "vehicle": {
+        "name": "车辆",
+        "description": "地面车辆模板"
+      }
+    },
+    "responses": {
+      "createModel": "要创建3D模型，您可以使用\"创建\"部分中的模型创建工具。从选择模板或上传您自己的基础模型开始，然后使用编辑工具进行自定义。",
+      "nftInfo": "NFT（非同质化代币）是存储在区块链上的独特数字资产。在我们的平台上，您可以创建、购买、出售和收集可在虚拟空间中使用的3D NFT。",
+      "vrHelp": "我们的平台同时支持VR和非VR体验。对于VR，连接您的头显并点击兼容的NFT和空间上的VR按钮。没有VR设备，您仍然可以使用屏幕探索所有内容。",
+      "walletHelp": "要连接您的钱包，请点击右上角的\"连接钱包\"按钮。我们支持MetaMask和其他以太坊兼容钱包。确保您在AlveyChain网络上。",
+      "generalHelp": "MetaverseX是一个用于创建、交易和体验3D NFT的平台。您可以探索市场、创建自己的NFT、设计虚拟空间并与其他创作者互动。",
+      "default": "我在这里帮助您导航MetaverseX平台。您可以询问关于创建NFT、使用市场、设置虚拟空间或任何其他功能的问题。"
+    }
+  },
+  "dappsHub": {
+    "title": "应用中心",
+    "subtitle": "探索AlveyChain生态系统中的集成应用",
+    "allCategories": "所有类别",
+    "featured": "精选",
+    "noAppsFound": "没有找到匹配您搜索条件的应用",
+    "categories": {
+      "defi": "去中心化金融",
+      "nft": "NFT",
+      "games": "游戏",
+      "tools": "工具",
+      "social": "社交",
+      "creator": "创作者",
+      "metaverse": "元宇宙",
+      "analytics": "分析",
+      "education": "教育",
+      "governance": "治理",
+      "bridges": "跨链桥"
+    },
+    "searchPlaceholder": "搜索应用...",
+    "appCard": {
+      "launch": "启动",
+      "comingSoon": "即将推出",
+      "new": "新上线",
+      "popular": "热门"
+    },
+    "apps": {
+      "decentraland": {
+        "description": "连接Decentraland元宇宙，并导入/导出您的AlveyChain NFT"
+      },
+      "sandbox": {
+        "description": "使用您的NFT在Sandbox世界中构建和玩耍"
+      },
+      "opensea": {
+        "description": "将您的AlveyChain NFT跨链到OpenSea市场"
+      },
+      "aave": {
+        "description": "使用您的NFT作为抵押物进行借贷"
+      },
+      "aiGenerator": {
+        "name": "AI创作工具",
+        "description": "AI辅助生成3D模型和虚拟空间"
+      },
+      "virtualEvents": {
+        "name": "虚拟活动平台",
+        "description": "在您的虚拟空间中举办社交活动和会议"
+      },
+      "somniumSpace": {
+        "description": "可用您的NFT定制的高级VR元宇宙体验"
+      },
+      "voxels": {
+        "description": "基于体素的虚拟世界，可导入您的3D NFT"
+      },
+      "rarible": {
+        "description": "将您的NFT跨链到Rarible进行销售"
+      },
+      "blur": {
+        "description": "面向专业交易者的高级NFT交易平台"
+      },
+      "nftfi": {
+        "description": "P2P NFT贷款平台，最大化您的NFT价值"
+      },
+      "uniswap": {
+        "description": "使用您的流动性提供者NFT进行DeFi交易"
+      },
+      "paraswap": {
+        "description": "多链聚合器，为您的NFT交易找到最佳价格"
+      },
+      "nftGenerator": {
+        "name": "批量NFT生成器",
+        "description": "快速创建NFT系列的工具，包含特征管理"
+      },
+      "midjourney": {
+        "description": "从文本生成3D模型的AI工具"
+      },
+      "blenderWeb": {
+        "description": "浏览器中运行的简化版Blender 3D建模工具"
+      },
+      "nftSocial": {
+        "name": "NFT社交网络",
+        "description": "专为NFT收藏家和创作者设计的社交平台"
+      },
+      "metaverseChat": {
+        "name": "元宇宙聊天室",
+        "description": "在虚拟空间内与其他用户实时交流"
+      },
+      "axieInfinity": {
+        "description": "导入您的NFT作为游戏角色"
+      },
+      "godsUnchained": {
+        "description": "基于NFT的数字卡牌游戏"
+      },
+      "illuvium": {
+        "description": "开放世界RPG游戏，使用NFT角色"
+      },
+      "nftScoring": {
+        "name": "NFT评分系统",
+        "description": "使用AI分析和评估NFT的市场价值"
+      },
+      "nftAnalytics": {
+        "name": "NFT市场分析",
+        "description": "跟踪NFT市场趋势、交易量和价格走势"
+      },
+      "nftAcademy": {
+        "name": "NFT学院",
+        "description": "学习创建、交易和最大化NFT价值的课程"
+      },
+      "modelingCourses": {
+        "name": "3D建模课程",
+        "description": "从入门到专业的3D建模和动画教程"
+      },
+      "metaverseOffice": {
+        "name": "元宇宙办公空间",
+        "description": "为企业提供的虚拟办公场所和会议室"
+      },
+      "virtualStorefront": {
+        "name": "虚拟店铺",
+        "description": "在元宇宙中创建品牌旗舰店和展示间"
+      },
+      "nftMusic": {
+        "name": "NFT音乐平台",
+        "description": "创建、购买和交易音乐NFT"
+      },
+      "virtualConcerts": {
+        "name": "虚拟音乐会",
+        "description": "在元宇宙中举办和参加虚拟音乐会"
+      }
+    }
+  },
+  "gameCenter": {
+    "title": "游戏中心",
+    "subtitle": "完成任务和挑战以获得奖励",
+    "level": "等级",
+    "points": "点数",
+    "experience": "经验值",
+    "tasks": {
+      "title": "每日任务",
+      "completed": "已完成",
+      "progress": "进度"
+    },
+    "achievements": {
+      "title": "成就",
+      "unlocked": "已解锁"
+    },
+    "leaderboard": {
+      "title": "月度排行榜",
+      "rank": "您的排名"
+    },
+    "weeklyChallenge": {
+      "endDate": "结束于",
+      "participants": "参与者",
+      "reward": "点数奖励",
+      "viewHistory": "查看历史挑战"
+    },
+    "rewardStore": {
+      "title": "奖励商店",
+      "availablePoints": "可用点数",
+      "exchange": "兑换",
+      "locked": "锁定"
+    }
+  },
+  "dynamicNFT": {
+    "evolution": "进化",
+    "phase": "阶段",
+    "loading": "加载模型中...",
+    "error": "模型加载失败",
+    "vrCompatible": "VR"
+  },
+  "encyclopedia": {
+    "title": "AlveyChain百科全书",
+    "subtitle": "探索AlveyChain生态系统中的热门应用、工具和指南",
+    "searchPlaceholder": "搜索百科全书内容...",
+    "featured": "推荐内容",
+    "noEntriesFound": "未找到匹配的内容",
+    "resetSearch": "重置搜索",
+    "backToList": "返回列表",
+    "relatedApps": "相关应用",
+    "tutorial": "教程视频",
+    "categories": {
+      "all": "全部类别",
+      "basics": "基础知识",
+      "dapps": "应用",
+      "defi": "DeFi",
+      "nft": "NFT",
+      "tools": "工具",
+      "faq": "常见问题"
+    },
+    "entries": {
+      "alveyChainIntro": {
+        "title": "AlveyChain介绍",
+        "description": "关于AlveyChain区块链网络的基本介绍和技术特点",
+        "content": "AlveyChain是一个高性能的区块链网络，由Alvey基金会开发和维护。它采用POS(权益证明)共识机制，确保低费用和快速交易。\n\nAlveyChain网络的Chain ID为3797，具有与以太坊兼容的特性，允许开发者轻松将以太坊上的应用迁移到AlveyChain上。这种兼容性使得AlveyChain成为开发者友好的选择，同时也能为用户提供丰富的应用生态系统。\n\nAlveyChain的核心优势包括高吞吐量、低交易费用、快速确认时间以及与以太坊开发工具和钱包的无缝兼容性。"
+      },
+      "wallets": {
+        "title": "兼容钱包",
+        "description": "支持AlveyChain的各种加密货币钱包及其使用方法",
+        "content": "AlveyChain网络与多种流行钱包兼容，让用户可以轻松管理他们的资产和与DApps互动。\n\n主要支持的钱包包括：\n\n1. MetaMask - 最流行的以太坊兼容钱包，可以通过添加AlveyChain网络(Chain ID: 3797)来支持AlveyChain。\n\n2. AlveyWallet - 官方开发的原生钱包，专为AlveyChain网络优化。\n\n3. Trust Wallet - 移动端多币种钱包，支持AlveyChain及其代币。\n\n4. Coin98 - 跨链钱包，支持多种区块链资产管理。\n\n要连接到AlveyChain网络，用户需要在钱包中添加自定义网络，并设置正确的RPC URL、Chain ID和本地代币名称。"
+      },
+      "nftMarketplace": {
+        "title": "NFT市场",
+        "description": "AlveyChain上的NFT交易平台及其特点",
+        "content": "AlveyChain拥有多个NFT市场平台，让用户能够创建、出售和收集独特的数字资产。\n\n主要的NFT市场包括：\n\n1. MetaverseX - 专注于3D和VR/AR NFT的市场，支持动态NFT功能，允许NFT根据市场数据、用户交互和时间推移而变化。\n\n2. AlveyNFT - 官方支持的综合性NFT市场，支持多种NFT格式和系列。\n\n3. ArtAlvey - 专注于数字艺术品的NFT平台，为艺术家提供展示和售卖作品的场所。\n\nAlveyChain上的NFT交易通常具有极低的Gas费用，这使得创作者和收藏者可以更经济地参与NFT生态系统。平台还提供批量铸造、懒加载铸造和免Gas铸造等创新功能。"
+      },
+      "metaverseX": {
+        "title": "MetaverseX平台",
+        "description": "AlveyChain上领先的3D NFT和虚拟空间平台",
+        "content": "MetaverseX是AlveyChain上最具创新性的3D NFT平台，提供沉浸式的虚拟空间体验。\n\n平台主要功能包括：\n\n1. 3D NFT创建和交易 - 用户可以上传、铸造和交易3D模型作为NFT，支持多种3D格式。\n\n2. 动态NFT - 创新的动态NFT系统，允许NFT随着市场数据、用户交互和时间推移而变化和进化。\n\n3. 虚拟空间构建 - 用户可以创建自己的虚拟展览室、画廊和社交空间，并在其中展示自己的NFT收藏。\n\n4. VR/AR支持 - 全面支持VR和AR设备，提供沉浸式体验，同时也兼容普通设备访问。\n\n5. AI辅助创作 - 集成AI助手，帮助用户创建3D模型和设计虚拟空间。\n\nMetaverseX已经成为AlveyChain上的旗舰项目之一，连接了NFT、元宇宙和区块链技术。"
+      },
+      "alveySwap": {
+        "title": "AlveySwap",
+        "description": "AlveyChain上的去中心化交易所",
+        "content": "AlveySwap是AlveyChain上领先的去中心化交易所(DEX)，允许用户无需中介机构就能交换代币。\n\nAlveySwap的主要特点包括：\n\n1. 自动做市商(AMM)模型 - 使用流动性池来促进代币交换，无需订单簿。\n\n2. 低交易费用 - 得益于AlveyChain的低Gas费用，交易成本显著低于以太坊上的DEX。\n\n3. 流动性挖矿 - 用户可以通过提供流动性来获得ASWAP治理代币奖励。\n\n4. 跨链交换 - 支持与其他区块链网络的资产桥接和交换。\n\n5. 农场和矿池 - 提供多种DeFi挖矿机会，增加收益。\n\n使用AlveySwap，交易者可以轻松地在AlveyChain网络上交换代币，同时流动性提供者可以获得交易费用分成和额外的代币奖励。"
+      },
+      "alveyBridge": {
+        "title": "AlveyBridge",
+        "description": "连接AlveyChain与其他区块链网络的跨链桥",
+        "content": "AlveyBridge是连接AlveyChain与其他区块链网络的官方跨链桥，让用户能够在不同网络间转移资产。\n\n主要功能包括：\n\n1. 多链支持 - 支持与以太坊、BSC、Polygon等主流区块链的资产转移。\n\n2. 代币和NFT桥接 - 不仅支持代币转移，还支持NFT的跨链转移。\n\n3. 快速确认 - 大多数转账在几分钟内就能完成确认。\n\n4. 安全保障 - 采用多重签名和时间锁机制以确保资产安全。\n\n5. 低费用 - 相比其他跨链桥，提供更经济的转账费用。\n\n使用AlveyBridge，用户可以将以太坊或其他网络上的资产转移到AlveyChain，享受低费用和高效的交易体验，同时也可以将AlveyChain上的资产转移回其他网络。"
+      },
+      "staking": {
+        "title": "质押机制",
+        "description": "AlveyChain的质押系统及其奖励机制",
+        "content": "AlveyChain采用权益证明(POS)共识机制，用户可以通过质押ALVEY代币来参与网络验证并获取奖励。\n\n质押系统的主要特点：\n\n1. 验证者节点 - 用户需要质押最低100,000 ALVEY才能运行验证者节点。\n\n2. 委托质押 - 小额持有者可以将代币委托给现有验证者，分享奖励。\n\n3. 奖励机制 - 验证者和委托者根据质押比例获得区块奖励和交易费用分成。\n\n4. 解绑期 - 取回质押的代币需要经过14天的解绑期。\n\n5. 惩罚机制 - 恶意行为会导致质押代币被扣减（削减）。\n\n通过质押，ALVEY持有者不仅可以获得被动收入，还能参与网络治理决策，共同维护AlveyChain的安全和去中心化。"
+      },
+      "blockExplorer": {
+        "title": "区块浏览器",
+        "description": "AlveyChain的区块浏览器及其使用指南",
+        "content": "AlveyScan是AlveyChain的官方区块浏览器，让用户能够查询和跟踪链上交易、地址、代币和智能合约。\n\n主要功能包括：\n\n1. 交易查询 - 通过交易哈希查看详细的交易信息，包括状态、Gas使用和交互的合约。\n\n2. 地址监控 - 查看任何地址的余额、交易历史和代币持有情况。\n\n3. 智能合约验证 - 开发者可以验证和公开合约源代码，提高透明度。\n\n4. 代币信息 - 查看AlveyChain上所有代币的信息，包括总供应量、持有者数量和交易量。\n\n5. 网络统计 - 提供网络的实时状态，包括TPS、区块高度、活跃地址等数据。\n\n6. API服务 - 为开发者提供丰富的API接口，用于构建应用和分析工具。\n\nAlveyScan是研究、分析和验证AlveyChain网络活动的必备工具。"
+      },
+      "mintNFT": {
+        "title": "NFT铸造指南",
+        "description": "在AlveyChain上创建和铸造NFT的详细步骤",
+        "content": "在AlveyChain上铸造NFT是一个简单且低成本的过程，本指南将帮助你完成所有必要步骤。\n\n铸造NFT的基本流程：\n\n1. 准备数字内容 - 可以是图像、视频、3D模型或音频文件。确保你拥有内容的版权。\n\n2. 选择NFT平台 - 可以使用MetaverseX、AlveyNFT等平台，或者直接使用智能合约。\n\n3. 连接钱包 - 使用MetaMask等钱包连接到AlveyChain网络。\n\n4. 上传内容 - 将数字内容上传到IPFS等去中心化存储。\n\n5. 设置NFT属性 - 添加名称、描述、价格和版税设置。\n\n6. 铸造NFT - 确认交易并支付少量Gas费用。\n\n7. 列出销售 - 将NFT上架到市场供他人购买。\n\n在AlveyChain上铸造NFT的主要优势是极低的Gas费用，这使得批量铸造和各种实验性创作变得经济可行。"
+      },
+      "dynamicNFTs": {
+        "title": "动态NFT技术",
+        "description": "AlveyChain上创新的动态NFT技术及其应用",
+        "content": "动态NFT是AlveyChain上的创新技术，能够根据外部数据、用户交互和时间推移而变化，为NFT带来全新的维度。\n\n动态NFT的主要特点：\n\n1. 数据驱动变化 - NFT可以根据市场数据、价格走势或外部事件而改变其外观或属性。\n\n2. 进化系统 - NFT可以随着时间或特定条件的满足而升级进化到新阶段。\n\n3. 交互响应 - 根据用户的交互行为，如浏览、点击或者游戏中的活动而变化。\n\n4. 链上和链下更新 - 支持链上记录关键状态变化，同时利用链下渲染降低成本。\n\n5. 应用场景 - 游戏角色成长、艺术作品演变、会员卡升级、收藏品增值等。\n\nMetaverseX平台已经实现了全面的动态NFT支持，允许创作者设计多阶段的进化NFT，为收藏者提供更具互动性和长期价值的数字资产。"
+      },
+      "yieldFarming": {
+        "title": "收益耕作",
+        "description": "AlveyChain上的收益耕作策略和平台",
+        "content": "收益耕作是DeFi领域的重要组成部分，允许用户通过提供流动性和参与各种DeFi协议来赚取收益。\n\nAlveyChain上的收益耕作主要形式：\n\n1. 流动性挖矿 - 为DEX提供流动性，获得交易费用和额外代币奖励。\n\n2. 借贷平台 - 存款获得利息，或借款并质押获得奖励代币。\n\n3. 单币质押 - 单一代币质押获得固定或浮动收益。\n\n4. LP代币质押 - 提供流动性后获得的LP代币再质押获取额外收益。\n\n5. 自动复合 - 收益自动再投资，实现复利增长。\n\n主要平台包括AlveySwap、AlveyYield和AlveyLend等。由于AlveyChain的低Gas费用，即使小额投资者也能有效参与收益耕作，而不必担心高昂的交易成本侵蚀收益。"
+      },
+      "alveyDAO": {
+        "title": "AlveyDAO",
+        "description": "AlveyChain的去中心化自治组织",
+        "content": "AlveyDAO是AlveyChain生态系统的去中心化自治组织，负责网络的治理和社区资金的管理。\n\n主要特点包括：\n\n1. 治理机制 - 代币持有者可以提交提案并投票决定网络参数变更、资金分配等关键决策。\n\n2. 社区金库 - 管理由交易费用、通胀分配等来源积累的资金，用于生态系统发展。\n\n3. 提案流程 - 任何持有足够治理代币的用户都可以提交提案，经过讨论和投票后执行。\n\n4. 代表制 - 用户可以将投票权委托给代表，简化参与过程。\n\n5. 透明执行 - 所有决策和资金流向完全在链上公开，确保透明度。\n\nAlveyDAO的存在确保了AlveyChain的去中心化治理，让社区成员能够直接参与网络的发展方向和资源分配。"
+      },
+      "alveyGames": {
+        "title": "AlveyChain游戏",
+        "description": "AlveyChain上的区块链游戏和GameFi项目",
+        "content": "AlveyChain正成为区块链游戏开发者的热门选择，主要得益于其低费用和高速交易。\n\n主要游戏类型包括：\n\n1. Play-to-Earn游戏 - 玩家通过游戏活动赚取可交易的代币和NFT。\n\n2. 策略与收集游戏 - 收集、培养和交易游戏中的NFT角色或道具。\n\n3. 元宇宙游戏 - 在虚拟世界中购买土地、建造和社交互动。\n\n4. 赌博与彩票 - 基于区块链的透明赌博和彩票系统。\n\n5. 回合制与卡牌游戏 - 利用NFT作为游戏卡牌的策略游戏。\n\n热门游戏包括AlveyMonsters、CryptoEmpires和MetaRacing等。AlveyChain的游戏生态系统正在快速发展，为玩家和投资者提供多样化的选择。"
+      },
+      "networkIssues": {
+        "title": "常见网络问题",
+        "description": "AlveyChain网络常见问题及解决方案",
+        "content": "使用AlveyChain时可能遇到的常见问题及其解决方案：\n\n1. 交易卡住\n   - 问题：交易长时间未被确认\n   - 解决方案：尝试使用更高的Gas价格重新发送交易，或等待网络拥堵缓解\n\n2. 钱包连接问题\n   - 问题：钱包无法连接到AlveyChain网络\n   - 解决方案：检查网络配置参数，确保RPC URL和Chain ID正确\n\n3. 资产不可见\n   - 问题：转入的代币在钱包中不可见\n   - 解决方案：手动添加代币合约地址到钱包中\n\n4. 跨链转账延迟\n   - 问题：跨链桥转账长时间未到账\n   - 解决方案：检查原链和目标链的交易状态，联系桥服务支持\n\n5. 智能合约交互失败\n   - 问题：与DApp交互失败\n   - 解决方案：确保钱包有足够ALVEY支付Gas，检查合约是否暂停\n\n大多数问题可以通过刷新浏览器、重启钱包应用或更新至最新版本解决。如有持续问题，可以通过官方社区获取支持。"
+      },
+      "tokenomics": {
+        "title": "代币经济学",
+        "description": "ALVEY代币的经济模型和分配机制",
+        "content": "ALVEY是AlveyChain的原生代币，用于支付交易费用、参与网络治理和质押。\n\n代币经济学的主要特点：\n\n1. 总供应量 - ALVEY代币的总供应量为10亿枚，采用通缩模型。\n\n2. 代币分配 - 初始分配包括团队(15%)、基金会(20%)、生态系统发展(25%)、社区空投(10%)和公开销售(30%)。\n\n3. 通缩机制 - 交易费用的一部分会被销毁，随着使用增加，总供应量会减少。\n\n4. 质押奖励 - 验证者和委托者根据质押比例获得新区块奖励。\n\n5. 治理权利 - ALVEY持有者可以提交和投票决定网络参数调整和协议升级。\n\n6. 使用场景 - 支付交易费用、质押获取收益、参与DAO投票、获取平台折扣等。\n\nALVEY代币的经济模型旨在创造长期价值，随着网络使用率的提高和生态系统的扩展，代币需求预计将增加。"
+      }
+    }
+  },
+  "errors": {
+    "walletNotInstalled": "MetaMask未安装",
+    "connectionError": "连接错误",
+    "networkError": "请切换到AlveyChain网络",
+    "contractNotDeployed": "合约未配置，请先部署",
+    "notAuthenticated": "请连接您的钱包",
+    "insufficientFunds": "余额不足",
+    "transactionFailed": "交易失败",
+    "fileUploadFailed": "文件上传失败",
+    "fileTooBig": "文件大小超过限制",
+    "unsupportedFormat": "不支持的文件格式"
+  },
+  "explore": {
+    "title": "探索新功能",
+    "comingSoon": "更多功能即将推出",
+    "comingSoonDesc": "我们正在不断开发新功能，敬请期待！"
+  },
+  "footer": {
+    "platform": "AlveyChain多元宇宙交易平台",
+    "supportInfo": "支持所有设备，无需VR设备也可使用"
+  },
+  "translation": {
+    "common": {
+      "loading": "加载中...",
+      "error": "出错了",
+      "back": "返回",
+      "next": "下一步",
+      "save": "保存",
+      "cancel": "取消",
+      "delete": "删除",
+      "edit": "编辑",
+      "view": "查看",
+      "notFound": "未找到"
+    },
+    "appHub": {
+      "title": "应用中心",
+      "subtitle": "探索AlveyChain生态系统中的热门和成熟应用",
+      "connectWalletHeading": "连接钱包开始探索",
+      "connectWalletDescription": "连接您的钱包以获取个性化推荐，并记录您最近使用的应用。",
+      "connectWallet": "连接钱包",
+      "walletNotDetected": "未检测到钱包，请安装MetaMask或其他兼容的钱包。",
+      "recentlyUsed": "最近使用",
+      "searchPlaceholder": "搜索应用...",
+      "launch": "启动",
+      "launchApp": "启动应用",
+      "featured": "精选应用",
+      "noAppsFound": "未找到符合条件的应用",
+      "resetFilters": "重置筛选条件",
+      "users": "用户",
+      "mature": "成熟",
+      "beta": "测试版",
+      "thirdParty": "第三方",
+      "categories": {
+        "all": "全部类别",
+        "exchange": "交易所",
+        "defi": "DeFi",
+        "nft": "NFT",
+        "gaming": "游戏",
+        "metaverse": "元宇宙",
+        "social": "社交",
+        "tools": "工具",
+        "bridge": "跨链桥"
+      },
+      "apps": {
+        "alveyswap": {
+          "description": "AlveyChain上的原生去中心化交易所，提供低滑点和高流动性",
+          "longDescription": "AlveySwap是AlveyChain原生的去中心化交易所，提供代币交换、流动性挖矿和质押功能。通过高效的自动做市商(AMM)机制，用户可以享受低滑点和高流动性的交易体验。"
+        },
+        "alveybridge": {
+          "description": "连接AlveyChain与其他主流区块链网络的跨链桥",
+          "longDescription": "AlveyBridge允许用户在AlveyChain和其他主要区块链(如以太坊、BSC和Polygon)之间无缝转移资产。它提供快速确认和低费用的跨链体验，支持代币和NFT的转移。"
+        },
+        "alveylend": {
+          "description": "在AlveyChain上借贷资产，支持多种代币并提供有竞争力的利率",
+          "longDescription": "AlveyLend是一个去中心化借贷协议，用户可以存入资产赚取利息，或用抵押品借入其他资产。它支持包括NFT在内的多种抵押品类型，并提供有竞争力的利率和流动性挖矿奖励。"
+        },
+        "alveynft": {
+          "description": "原生NFT市场，支持3D模型展示、拍卖和二级市场交易",
+          "longDescription": "AlveyNFT是AlveyChain原生的NFT市场，专为3D NFT设计，支持高质量的渲染和交互式预览。用户可以铸造、买卖NFT，支持多种拍卖形式和二级市场交易。"
+        },
+        "alveymonsters": {
+          "description": "基于AlveyChain的NFT收集与战斗游戏",
+          "longDescription": "AlveyMonsters是一款边玩边赚(P2E)游戏，玩家可以收集、培养和战斗数字怪物。所有游戏资产都是链上NFT，可以在市场上交易，游戏内活动可以赚取代币奖励。"
+        },
+        "alveyscan": {
+          "description": "AlveyChain的区块浏览器，提供交易、合约和地址的完整信息",
+          "longDescription": "AlveyScan是AlveyChain的官方区块浏览器，为用户提供区块、交易、合约和账户的完整信息。它还提供API访问和高级分析工具，帮助开发者和用户更好地了解链上活动。"
+        },
+        "alveystake": {
+          "description": "质押AlveyChain代币以获取网络奖励和治理权",
+          "longDescription": "AlveyStake允许用户质押代币来维护网络安全并获得奖励。质押者还可以参与治理投票，决定网络参数和协议升级。它提供灵活的质押期限和多种奖励发放方式。"
+        },
+        "alveyindex": {
+          "description": "AlveyChain生态的指数基金，让用户通过单一代币获得广泛风险分散",
+          "longDescription": "AlveyIndex提供了一系列的指数型代币，代表AlveyChain生态系统中不同领域(如DeFi、NFT、Gaming)的组合。用户可以通过持有单个指数代币获得广泛的风险分散效果。"
+        },
+        "alveyart": {
+          "description": "专注于数字艺术品的NFT创作和交易平台",
+          "longDescription": "AlveyArt是专为艺术家和创作者设计的NFT平台，提供先进的创作工具、精选展览和艺术家社区。它支持多种艺术形式，包括2D艺术、3D模型和沉浸式体验。"
+        },
+        "alveymeta": {
+          "description": "AlveyChain元宇宙，用户可购买和开发虚拟土地",
+          "longDescription": "AlveyMeta是AlveyChain的原生元宇宙，用户可以购买、开发和自定义虚拟土地。它提供强大的创作工具和社交功能，支持活动、游戏和商业应用。用户可以将NFT导入并在虚拟空间中展示。"
+        },
+        "alveypools": {
+          "description": "流动性挖矿和收益聚合平台，自动优化收益策略",
+          "longDescription": "AlveyPools是一个流动性挖矿和收益聚合平台，自动为用户寻找并优化收益策略。它提供单一资产质押、LP代币挖矿和复利功能，降低了用户的运营成本和风险。"
+        },
+        "alveydex": {
+          "description": "专业级去中心化交易所，支持限价单和高级交易功能",
+          "longDescription": "AlveyDEX是面向专业交易者的去中心化交易所，提供订单簿交易和高级交易功能。它支持限价单、止损单和杠杆交易，同时保持资产的非托管性和交易的透明度。"
+        },
+        "alchemy": {
+          "description": "AlveyChain开发者工具和基础设施服务",
+          "longDescription": "Alchemy为AlveyChain开发者提供强大的API、节点服务和开发工具，简化区块链应用的构建过程。它提供可靠的基础设施、监控工具和分析服务，帮助开发者创建高质量的去中心化应用。"
+        },
+        "alveydao": {
+          "description": "AlveyChain生态系统治理组织，社区可提案和投票",
+          "longDescription": "AlveyDAO是AlveyChain生态系统的去中心化自治组织，负责治理和资源分配。持有治理代币的用户可以提交提案、参与投票，决定协议升级、参数调整和资金分配等重要决策。"
+        },
+        "alveypay": {
+          "description": "面向商家的加密支付解决方案",
+          "longDescription": "AlveyPay为商家提供整合加密货币支付的完整解决方案。它支持多种代币付款、自动化结算和详细的交易报告，同时提供用户友好的界面和多平台集成选项。"
+        },
+        "uniswap": {
+          "description": "业界领先的去中心化交易所，集中流动性和多链支持",
+          "longDescription": "Uniswap V3是以太坊上最受欢迎的DEX，提供创新的集中流动性模型，显著提高资本效率。Uniswap已集成AlveyChain支持，允许用户在低成本和高速环境中交易。"
+        },
+        "aave": {
+          "description": "去中心化借贷协议，支持可变利率和闪电贷",
+          "longDescription": "Aave是领先的DeFi借贷协议，允许用户存款赚取利息或借入资产。它提供可变和稳定利率选项、闪电贷功能，并支持多种资产类型。在AlveyChain上，Aave享有低Gas费和快速确认的优势。"
+        },
+        "yearn": {
+          "description": "自动化收益聚合器，优化DeFi策略",
+          "longDescription": "Yearn Finance是一个智能收益聚合器，自动在各种DeFi协议之间移动资金以优化收益。它为用户简化了复杂的收益耕作策略，提供自动复利和风险分散。在AlveyChain上，Yearn提供针对本地生态系统优化的策略。"
+        },
+        "nftfi": {
+          "description": "基于NFT的借贷市场，将NFT变为流动性资产",
+          "longDescription": "NFTfi允许用户用其NFT作为抵押品借入加密货币，从而为非流动性资产提供流动性。它采用P2P模式，贷方可以根据NFT的价值提供定制贷款条件。该平台支持多种NFT标准，包括来自AlveyChain的3D NFT。"
+        },
+        "blur": {
+          "description": "面向专业交易者的高级NFT交易平台",
+          "longDescription": "Blur是专为NFT专业交易者设计的市场，提供高级交易工具、实时数据和批量操作功能。它的界面针对高效率交易进行了优化，支持扫地机器人和快速定价。Blur与AlveyChain的集成允许用户跨链交易NFT资产。"
+        },
+        "foundation": {
+          "description": "精选艺术NFT平台，支持创作者和收藏家",
+          "longDescription": "Foundation是一个策展型NFT平台，专注于高质量数字艺术。它通过邀请制和社区支持，维持内容的高质量和真实性。平台为艺术家提供了强大的展示工具和公平的收益分配模式，同时为收藏家提供真实的艺术品源流。"
+        },
+        "sandbox": {
+          "description": "用户创建的虚拟世界，拥有和交易虚拟土地和资产",
+          "longDescription": "The Sandbox是一个由用户创建的虚拟世界，玩家可以拥有、创建和货币化游戏体验。它提供强大的创作工具，用户可以设计游戏、建筑和虚拟资产。与AlveyChain的集成让用户可以将其NFT导入Sandbox环境，并跨链交易资产。"
+        },
+        "decentraland": {
+          "description": "去中心化虚拟现实平台，用户拥有和创建内容",
+          "longDescription": "Decentraland是一个去中心化的虚拟现实平台，由用户拥有的数字地块组成。用户可以在其土地上创建交互式体验、举办活动和建立商业。通过与AlveyChain的集成，用户可以无缝导入3D NFT，并在多个链间转移资产。"
+        },
+        "illuvium": {
+          "description": "AAA级开放世界RPG游戏，结合收集和战斗元素",
+          "longDescription": "Illuvium是一款高质量的开放世界RPG游戏，玩家可以探索世界，捕获和训练称为Illuvials的生物。游戏具有AAA级图形和深度游戏机制，所有游戏资产都是可交易的NFT。AlveyChain集成为游戏提供了更低成本的交易环境。"
+        },
+        "axie": {
+          "description": "流行的NFT游戏，玩家培养和战斗可爱生物",
+          "longDescription": "Axie Infinity是区块链游戏领域的先驱，玩家收集、培养和战斗名为Axies的可爱生物。所有游戏资产都是NFT，可以在市场上交易。它的边玩边赚(P2E)模式在全球范围内改变了游戏经济。AlveyChain集成降低了入门门槛，提供更便宜的交易。"
+        },
+        "layerzero": {
+          "description": "全链消息传递协议，安全高效地连接多个区块链",
+          "longDescription": "LayerZero是一种全链消息传递协议，使应用可以跨多个区块链无缝运行。它通过创新的安全模型提供可靠的跨链通信，同时保持去中心化。LayerZero与AlveyChain的集成极大地增强了生态系统的互操作性，允许资产和数据在各区块链之间自由流动。"
+        },
+        "chainlink": {
+          "description": "去中心化预言机网络，连接智能合约与真实世界数据",
+          "longDescription": "Chainlink是区块链最广泛使用的预言机网络，为智能合约提供可靠的链外数据。它支持价格数据馈送、随机数生成和API调用等服务，确保智能合约能够安全地与外部系统交互。在AlveyChain上，Chainlink为DApps提供经验证的链外数据。"
+        },
+        "lens": {
+          "description": "去中心化社交图谱协议，用户拥有自己的社交数据",
+          "longDescription": "Lens Protocol是一种去中心化社交图谱协议，用户拥有自己的内容、关注者和社交存在。它允许创建者跨应用携带社交数据，解决平台风险问题。与AlveyChain的集成丰富了元宇宙社交体验，将NFT与社交互动深度整合。"
+        }
+      }
+    },
+    "appConnector": {
+      "loading": "正在加载应用...",
+      "connecting": "正在连接...",
+      "errorTitle": "加载错误",
+      "loadError": "无法加载应用",
+      "connectionError": "连接应用失败",
+      "appError": "应用运行出错",
+      "retry": "重试",
+      "refresh": "刷新",
+      "openExternal": "在浏览器中打开",
+      "openInNewTab": "在新标签页打开",
+      "openApp": "打开应用",
+      "connectFirst": "先连接钱包",
+      "integrationInfo": "集成信息",
+      "apiModeDescription": "此应用通过API与MetaverseX平台集成。点击下方按钮在新窗口中使用该应用。"
+    }
+  }
+} 

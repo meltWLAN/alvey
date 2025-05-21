@@ -1,5 +1,6 @@
 import { expect } from "chai";
-import { ethers } from "hardhat";
+import pkg from 'hardhat';
+const { ethers } = pkg;
 
 describe("AlveyNFT Security Tests", function () {
   let nft;
@@ -271,4 +272,4 @@ describe("AlveyNFT Security Tests", function () {
       expect(await nft.totalSupply()).to.equal(0);
     });
   });
-}); 
+});

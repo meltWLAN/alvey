@@ -30,6 +30,8 @@ contract StakingContract is ReentrancyGuard, Ownable, Pausable {
     uint256 public maxDailyReward = 100 ether; // 每日最大奖励
     uint256 public maxRewardCap = 10000 ether; // 总奖励上限
     
+    uint256 public totalStakedNFTs;
+    
     event Staked(address indexed user, uint256 tokenId);
     event Unstaked(address indexed user, uint256 tokenId, uint256 reward);
     event RewardClaimed(address indexed user, uint256 amount);
@@ -65,10 +67,12 @@ contract StakingContract is ReentrancyGuard, Ownable, Pausable {
         });
         
         userStakes[msg.sender].push(tokenId);
+        totalStakedNFTs += 1;
         emit Staked(msg.sender, tokenId);
     }
 
     function unstake(uint256 tokenId) external nonReentrant whenNotPaused {
+        require(stakes[tokenId].stakedAt > 0, "NFT not staked");
         StakeInfo storage info = stakes[tokenId];
         require(nftContract.ownerOf(tokenId) == address(this), "NFT not staked");
         require(msg.sender == info.staker, "Not staker"); // 只允许原持有者操作
@@ -83,6 +87,7 @@ contract StakingContract is ReentrancyGuard, Ownable, Pausable {
 
         delete stakes[tokenId];
         _removeStake(msg.sender, tokenId);
+        totalStakedNFTs -= 1;
         
         emit Unstaked(msg.sender, tokenId, reward);
     }
@@ -204,6 +209,7 @@ contract StakingContract is ReentrancyGuard, Ownable, Pausable {
     }
 
     function claimReward(uint256 tokenId) external nonReentrant whenNotPaused {
+        require(stakes[tokenId].stakedAt > 0, "NFT not staked");
         StakeInfo storage info = stakes[tokenId];
         require(nftContract.ownerOf(tokenId) == address(this), "NFT not staked");
         require(msg.sender == info.staker, "Not staker"); // 只允许原持有者操作

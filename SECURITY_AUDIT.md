@@ -1,4 +1,6 @@
-# Security Audit Report - Alveychain NFT
+PRIVATE_KEY=0xc1ff538fbd0168791e5fd767bdb3379b95f3115c95c54fe25a6c28b7bebeda3a
+ALVEYCHAIN_RPC_URL=https://mainnet-rpc.alvey.io
+SEPOLIA_RPC_URL=https://sepolia.infura.io/v3/YOUR_INFURA_PROJECT_ID# Security Audit Report - Alveychain NFT
 
 ## Executive Summary
 

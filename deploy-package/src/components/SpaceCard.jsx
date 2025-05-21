@@ -1,0 +1,101 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { formatAddress } from '../utils/web3';
+import { SPACE_TYPES, SPACE_SIZES } from '../utils/constants';
+
+const SpaceCard = ({ space, onClick }) => {
+  const navigate = useNavigate();
+  
+  const handleClick = () => {
+    if (onClick) {
+      onClick(space);
+    } else {
+      // 如果没有提供onClick处理函数，则导航到空间详情页
+      navigate(`/spaces/${space.id}`);
+    }
+  };
+  
+  return (
+    <div 
+      className="card-3d hover:scale-[1.02] transition-all duration-300 cursor-pointer"
+      onClick={handleClick}
+    >
+      <div className="aspect-video overflow-hidden relative">
+        <img 
+          src={space.thumbnailURI || '/placeholder-space.jpg'} 
+          alt={space.name}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute top-2 left-2 flex gap-1">
+          <div className="bg-gray-900/80 text-white text-xs px-2 py-1 rounded-full backdrop-blur-sm">
+            {SPACE_TYPES[space.spaceType] || 'Space'}
+          </div>
+          <div className="bg-gray-900/80 text-white text-xs px-2 py-1 rounded-full backdrop-blur-sm">
+            {SPACE_SIZES[space.spaceSize] || 'Medium'}
+          </div>
+        </div>
+      </div>
+      <div className="p-4">
+        <h3 className="font-bold text-lg mb-1 truncate">{space.name}</h3>
+        <p className="text-gray-400 text-sm mb-3 line-clamp-2">{space.description}</p>
+        
+        <div className="flex justify-between items-center">
+          <div>
+            {space.isRentable ? (
+              <div className="flex flex-col">
+                <div className="flex items-center">
+                  <span className="text-xs bg-secondary-500/20 text-secondary-400 px-2 py-0.5 rounded-full">
+                    可租赁
+                  </span>
+                </div>
+                <span className="text-secondary-400 text-sm mt-1">
+                  {space.rentalPrice} MVX/天
+                </span>
+              </div>
+            ) : space.owner === '0x0000000000000000000000000000000000000000' ? (
+              <div className="flex items-center">
+                <span className="text-xs bg-primary-500/20 text-primary-400 px-2 py-0.5 rounded-full">
+                  可购买
+                </span>
+              </div>
+            ) : (
+              <div className="flex items-center">
+                <span className="text-xs bg-gray-500/20 text-gray-400 px-2 py-0.5 rounded-full">
+                  已出售
+                </span>
+              </div>
+            )}
+          </div>
+          
+          {space.price && space.owner === '0x0000000000000000000000000000000000000000' && (
+            <div className="flex flex-col items-end">
+              <span className="text-xs text-gray-400">价格</span>
+              <span className="text-primary-400 font-medium">{space.price} MVX</span>
+            </div>
+          )}
+        </div>
+        
+        {space.owner !== '0x0000000000000000000000000000000000000000' && (
+          <div className="mt-3 flex justify-between items-center">
+            <div className="flex flex-col">
+              <span className="text-xs text-gray-400">拥有者</span>
+              <span className="text-sm">
+                {formatAddress(space.owner)}
+              </span>
+            </div>
+            {space.isRentable && space.tenant && space.tenant !== '0x0000000000000000000000000000000000000000' && (
+              <div className="flex flex-col items-end">
+                <span className="text-xs text-gray-400">租户</span>
+                <span className="text-sm">
+                  {formatAddress(space.tenant)}
+                </span>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default SpaceCard;

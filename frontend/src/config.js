@@ -11,16 +11,16 @@ export const CHAIN_CONFIG = {
     symbol: "ALV",
     decimals: 18
   },
-  rpcUrls: ["https://elves-core1.alvey.io/"],
-  blockExplorerUrls: ["https://alvey.io/"]
+  rpcUrls: ["https://elves-core1.alvey.io/", "https://elves-core2.alvey.io/", "https://elves-core3.alvey.io/"],
+  blockExplorerUrls: ["https://alveyscan.com/"]
 };
 
 // 合约地址 - 部署后填入实际地址
 export const CONTRACT_ADDRESSES = {
   // 示例合约地址 - 请在实际部署后替换
-  nftContract: "0x1234567890123456789012345678901234567890",
-  paymentToken: "0x0987654321098765432109876543210987654321",
-  stakingContract: "0xabcdefabcdefabcdefabcdefabcdefabcdefabcd"
+  nftContract: "0x8Cf96EB392F942D3a1DFa181C87BA074F510B00a",
+  paymentToken: "0x22f49bcb3dad370a9268ba3fca33cb037ca3d022",
+  stakingContract: "0x3935D642b1B3b0aca5F6518600057655378bdff7"
 };
 
 // 应用配置
@@ -37,4 +37,4 @@ export const APP_CONFIG = {
     discord: "https://discord.gg/alveychain",
     telegram: "https://t.me/alveychain"
   }
-}; 
+};

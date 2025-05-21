@@ -1,13 +1,15 @@
 const hre = require("hardhat");
+const deployMockERC20 = require("./deploy-mock-erc20");
 
 async function main() {
   console.log("Deploying AlveyNFT contract...");
 
-  // 假设的 ERC20 代币地址，在本地测试网上不会真实存在
-  const dummyTokenAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+  // 部署模拟 ERC20 代币并获取其地址
+  const paymentTokenAddress = await deployMockERC20();
+  console.log("Using payment token address:", paymentTokenAddress);
 
   const AlveyNFT = await hre.ethers.getContractFactory("AlveyNFT");
-  const alveyNFT = await AlveyNFT.deploy(dummyTokenAddress);
+  const alveyNFT = await AlveyNFT.deploy(paymentTokenAddress);
 
   await alveyNFT.waitForDeployment();
 
