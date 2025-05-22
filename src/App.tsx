@@ -1,34 +1,54 @@
-import { ChakraProvider, Box, VStack, Heading, Text, Button } from '@chakra-ui/react'
-import { useWeb3Modal } from '@web3modal/react'
-import { useAccount, useDisconnect } from 'wagmi'
+import { useState } from 'react'
+import { Box, Container, Heading, VStack, Button, Text, Flex } from '@chakra-ui/react'
+import { useAccount, useConnect, useDisconnect } from 'wagmi'
+import { useWeb3Modal } from '@web3modal/wagmi/react'
+import { useTranslation } from 'react-i18next'
+import NFTStaking from './components/NFTStaking'
 
 function App() {
+  const { t } = useTranslation()
   const { open } = useWeb3Modal()
-  const { address, isConnected } = useAccount()
+  const { isConnected, address } = useAccount()
   const { disconnect } = useDisconnect()
 
   return (
-    <ChakraProvider>
-      <Box minH="100vh" bg="gray.100" py={10}>
-        <VStack spacing={8} maxW="container.md" mx="auto" p={6} bg="white" borderRadius="xl" shadow="lg">
-          <Heading>Alveychain dApp</Heading>
+    <Container maxW="container.xl" py={8}>
+      <VStack spacing={8} align="stretch">
+        <Flex justifyContent="space-between" alignItems="center">
+          <Heading as="h1" size="xl">AlveyChain NFT Staking</Heading>
           
           {isConnected ? (
-            <VStack spacing={4}>
-              <Text>Connected to: {address}</Text>
-              <Button colorScheme="red" onClick={() => disconnect()}>
-                Disconnect Wallet
-              </Button>
-            </VStack>
+            <Button 
+              colorScheme="red" 
+              onClick={() => disconnect()}
+            >
+              {address?.slice(0, 6)}...{address?.slice(-4)} | {t('common.disconnect')}
+            </Button>
           ) : (
-            <Button colorScheme="blue" onClick={() => open()}>
-              Connect Wallet
+            <Button 
+              colorScheme="blue" 
+              onClick={() => open()}
+            >
+              {t('common.connect')}
             </Button>
           )}
-        </VStack>
-      </Box>
-    </ChakraProvider>
+        </Flex>
+
+        <Box>
+          {isConnected ? (
+            <NFTStaking />
+          ) : (
+            <Box p={8} borderWidth="1px" borderRadius="lg" textAlign="center">
+              <Text fontSize="xl">{t('common.pleaseConnect')}</Text>
+              <Button mt={4} colorScheme="blue" onClick={() => open()}>
+                {t('common.connect')}
+              </Button>
+            </Box>
+          )}
+        </Box>
+      </VStack>
+    </Container>
   )
 }
 
-export default App 
+export default App
