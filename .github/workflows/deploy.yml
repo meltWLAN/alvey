@@ -20,18 +20,32 @@ jobs:
           
       - name: Debug directory structure
         run: |
+          echo "Repository root:"
           ls -la
+          echo ""
+          echo "deploy-package directory:"
           ls -la deploy-package || echo "deploy-package directory not found"
+          echo ""
+          if [ -d "deploy-package/src" ]; then
+            echo "src directory:"
+            ls -la deploy-package/src
+          else
+            echo "src directory not found"
+          fi
           
       - name: Install dependencies
         run: |
-          cd deploy-package
+          cd deploy-package || exit 1
+          echo "Installing dependencies..."
           npm install
           
       - name: Build
         run: |
-          cd deploy-package
+          cd deploy-package || exit 1
+          echo "Building project..."
           npm run build
+          echo "Build output:"
+          ls -la || echo "Directory listing failed"
           ls -la dist || echo "dist directory not found after build"
           
       - name: Deploy to GitHub Pages
