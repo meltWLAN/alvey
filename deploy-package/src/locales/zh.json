@@ -10,7 +10,12 @@
     "connect": "连接钱包",
     "loading": "加载中...",
     "error": "出错了",
-    "success": "操作成功"
+    "success": "操作成功",
+    "pleaseConnect": "请连接钱包以使用此功能",
+    "refresh": "刷新",
+    "gotIt": "明白了",
+    "platformCompatibility": "平台兼容性",
+    "vrSupportInfo": "此平台支持VR设备。为获得最佳体验，请使用兼容的硬件。"
   },
   "home": {
     "title": "探索AlveyChain上的3D NFT世界",
@@ -44,5 +49,41 @@
     "price": "价格",
     "category": "类别",
     "search": "搜索NFT..."
+  },
+  "mint": {
+    "title": "铸造NFT",
+    "price": "铸造价格",
+    "balance": "您的余额",
+    "max": "总供应量",
+    "mint": "铸造NFT",
+    "approve": "授权",
+    "approveSuccess": "代币授权成功",
+    "mintSuccess": "NFT铸造成功"
+  },
+  "staking": {
+    "title": "质押NFT",
+    "totalStaked": "总质押NFT数量",
+    "rewardRate": "基础奖励率",
+    "approveNFTs": "授权NFT质押",
+    "approveSuccess": "NFT质押授权成功",
+    "yourNFTs": "您的NFT",
+    "stakedNFTs": "您质押的NFT",
+    "noNFTs": "您没有可质押的NFT",
+    "noStakedNFTs": "您还没有质押任何NFT",
+    "stakeSelected": "质押NFT",
+    "unstakeSelected": "取消质押NFT",
+    "claimReward": "领取奖励",
+    "stakeSuccess": "NFT质押成功",
+    "unstakeSuccess": "NFT取消质押成功",
+    "claimSuccess": "奖励领取成功"
+  },
+  "explore": {
+    "title": "探索功能",
+    "comingSoon": "即将推出",
+    "comingSoonDesc": "更多精彩功能正在开发中。敬请期待！"
+  },
+  "footer": {
+    "platform": "AlveyChain NFT平台",
+    "supportInfo": "如需支持，请联系：support@alveychain.io"
   }
 } 

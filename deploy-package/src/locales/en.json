@@ -10,7 +10,12 @@
     "connect": "Connect Wallet",
     "loading": "Loading...",
     "error": "Error",
-    "success": "Success"
+    "success": "Success",
+    "pleaseConnect": "Please connect your wallet to access this feature",
+    "refresh": "Refresh",
+    "gotIt": "Got it",
+    "platformCompatibility": "Platform Compatibility",
+    "vrSupportInfo": "This platform supports VR devices. For best experience, use compatible hardware."
   },
   "home": {
     "title": "Explore 3D NFTs on AlveyChain",
@@ -44,5 +49,41 @@
     "price": "Price",
     "category": "Category",
     "search": "Search NFTs..."
+  },
+  "mint": {
+    "title": "Mint NFT",
+    "price": "Mint Price",
+    "balance": "Your Balance",
+    "max": "Total Supply",
+    "mint": "Mint NFT",
+    "approve": "Approve",
+    "approveSuccess": "Token approved successfully",
+    "mintSuccess": "NFT minted successfully"
+  },
+  "staking": {
+    "title": "Stake NFTs",
+    "totalStaked": "Total Staked NFTs",
+    "rewardRate": "Base Reward Rate",
+    "approveNFTs": "Approve NFTs for Staking",
+    "approveSuccess": "NFTs approved for staking successfully",
+    "yourNFTs": "Your NFTs",
+    "stakedNFTs": "Your Staked NFTs",
+    "noNFTs": "You don't have any NFTs to stake",
+    "noStakedNFTs": "You haven't staked any NFTs yet",
+    "stakeSelected": "Stake NFT",
+    "unstakeSelected": "Unstake NFT",
+    "claimReward": "Claim Reward",
+    "stakeSuccess": "NFT staked successfully",
+    "unstakeSuccess": "NFT unstaked successfully",
+    "claimSuccess": "Reward claimed successfully"
+  },
+  "explore": {
+    "title": "Explore Features",
+    "comingSoon": "Coming Soon",
+    "comingSoonDesc": "More exciting features are in development. Stay tuned!"
+  },
+  "footer": {
+    "platform": "AlveyChain NFT Platform",
+    "supportInfo": "For support, contact: support@alveychain.io"
   }
 } 

@@ -11,24 +11,25 @@
     "postinstall": "echo 'Installation completed successfully'"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "ethers": "^6.7.0",
-    "i18next": "^23.5.1",
-    "react-i18next": "^13.2.2",
-    "@web3modal/ethereum": "^2.7.1",
-    "@web3modal/react": "^2.7.1",
-    "viem": "^1.10.9",
-    "wagmi": "^1.4.1",
     "@chakra-ui/react": "^2.8.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "framer-motion": "^10.16.4"
+    "@web3modal/ethereum": "^2.7.1",
+    "@web3modal/react": "^2.7.1",
+    "ethers": "^6.7.0",
+    "framer-motion": "^10.16.4",
+    "i18next": "^23.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.2.2",
+    "viem": "^1.10.9",
+    "wagmi": "^1.4.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
+    "terser": "^5.39.2",
     "vite": "^4.4.5"
   }
 }

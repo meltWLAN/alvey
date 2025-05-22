@@ -1,0 +1,94 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Check directory structure
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Repository structure:"
+          ls -la
+          echo "Deploy package structure (if exists):"
+          if [ -d "deploy-package" ]; then
+            ls -la deploy-package
+            echo "Package.json found:"
+            find . -name "package.json" | grep deploy-package || echo "No package.json in deploy-package"
+          else
+            echo "deploy-package directory does not exist"
+            echo "Checking if package.json exists in root:"
+            [ -f "package.json" ] && echo "package.json exists in root" || echo "No package.json in root"
+          fi
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies in correct location
+        run: |
+          if [ -d "deploy-package" ]; then
+            echo "Installing in deploy-package directory"
+            cd deploy-package
+            npm install --legacy-peer-deps
+          else
+            echo "Installing in root directory"
+            npm install --legacy-peer-deps
+          fi
+        
+      - name: Build in correct location
+        run: |
+          if [ -d "deploy-package" ]; then
+            echo "Building in deploy-package directory"
+            cd deploy-package
+            npm run build
+          else
+            echo "Building in root directory"
+            npm run build
+          fi
+        env:
+          CI: false
+          
+      - name: Determine dist path
+        id: dist-path
+        run: |
+          if [ -d "deploy-package/dist" ]; then
+            echo "path=deploy-package/dist" >> $GITHUB_OUTPUT
+          else
+            echo "path=dist" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ steps.dist-path.outputs.path }}
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 
