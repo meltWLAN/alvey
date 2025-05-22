@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/alvey-nft-staking/',
+  base: base: '/alvey/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
